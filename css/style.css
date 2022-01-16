@@ -59,16 +59,25 @@ footer
     width: 1200px;
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 footer .footer-items{
-    width: 19%;
+    width: 15%;
+}
+footer .subscriub{
+width: 25%;
 }
 footer .box-connect{
     margin: 10px;
     background-color: #484848;
     border-radius: 5px;
     padding: 12px;
-    width: 90%;
+    width: 100%;
+}
+footer .box-connect input{
+height: 35px;
+width: 100%;
+line-height: 35px;
 }
 footer .footer-items button{
     align-items: center;
@@ -82,13 +91,26 @@ footer .footer-items button{
     font-weight: 400;
     margin-top: 5px;
 }
+footer .box-connect .sub-input{
+    position: relative;
+}
+footer .box-connect form span{
+    position: absolute;
+    display: inline-block;
+    left:5%;
+    line-height: 35px;
+    opacity: 0.5;
+
+ }
 footer .footer-items .header-text{
     border-bottom: 1px solid #a6a6a6;
 }
 footer .footer-items h3{
 color: #a6a6a6;
+padding-bottom: 10px;
 }
 footer ul li{
     line-height: 2;
-    font-weight: 700;
+    font-weight: 350;
+    font-size: 16px;
 }
