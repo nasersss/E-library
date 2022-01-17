@@ -1,0 +1,79 @@
+
+/* **** */
+/* medai */
+@media (max-width:991px){
+    nav .togle-bar{
+        display: flex;
+    }
+    nav #nav-bar-list{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    nav ul li{
+        display: block;
+        width: 40%;
+        border-bottom: 1px solid #a6a6a6;
+    }
+}
+
+/* max-width:667px */
+@media (max-width:667px){
+    nav #nav-bar-list{
+        display: none;
+        flex-wrap: wrap;
+    }
+    nav ul li{
+        display: block;
+        width: 90%;
+        border-bottom: 1px solid #a6a6a6;
+    }
+}
+
+
+
+/* max-width:991px */
+@media (max-width:991px){
+    header .box-search img{
+     width: 150px;
+    }
+}
+
+/* max-width:667px */
+@media (max-width:667px){
+    header .box-search img{
+     display: none;
+    }
+}
+
+
+/* Footer */
+
+/* **************** */
+/* max-width:991px */
+@media (max-width:991px){
+    footer .footer-items{
+        width: 40%;
+    }
+
+    footer  ul{
+      display: none;
+    }
+
+    footer  h3:hover ul{
+       display: flex;
+      }
+    
+}
+/* *************** */
+/* max-width:667px */
+@media (max-width:667px){
+    footer .footer-items{
+        width: 90%;
+    }
+    .buttom .pyment{
+        width: 100%;  
+      }
+    .buttom .copy-right{
+        width: 100%;
+    }
+}

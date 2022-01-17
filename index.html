@@ -12,13 +12,25 @@
 
     <!-- style -->
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media.css">
 </head>
 <body dir="rtl">
     
     <!-- Header -->
+    <header>
         <nav class="container">
-            <ul>
-                <li style="border: none;"> <a href="#" > <span><i class="fas fa-user"></i></span> ادخل لحسابك أو سجل الآن</a></li>
+            <div class="togle-bar" >
+                <div class="icon" onclick="myFunction()">
+                   <span></span>
+                   <span></span>
+                    <span></span>
+                </div>
+                <div class="brand">
+                    <h3>القائمة</h3>
+                </div>
+            </div>
+            <ul id="nav-bar-list">
+                <li style="border-right: none;"> <a href="#" > <span><i class="fas fa-user"></i></span> ادخل لحسابك أو سجل الآن</a></li>
                 <li><a href="#"><span><i class="fas fa-star"></i></span> المفضلة</a></li>
                 <li><a href="#"><span><i class="fas fa-truck-moving"></i></span> تتبع الشحنة</a></li>
                 <li><a href="#"><span><i class="fas fa-cogs"></i></span> طلبات الصيانة</a></li>
@@ -26,13 +38,34 @@
                 <li><a href="#"> <span><i class="fas fa-map-marker-alt"></i></span> فروعنا</a></li>
                 <li><a href="#"><span></span> اليمن</a></li>
                 <li><a href="#"><span><i class="fas fa-language"></i> </span> Eenglish</a></li>
-
             </ul>
         </nav>
     <!-- Header !!-->
+    <div class="box-search container">
+
+        <div class="logo">
+            <img src="images/logo.svg" alt="">
+        </div>
+
+        <div class="search">
+            <input type="text" placeholder="البحث">
+        </div>
+
+        <div class="crad">
+            <p><i class="fas fa-shopping"></i>icon</p>
+        </div>
+    </div>
+</header>
+<!-- slider 1 -->
+
+<div class="slider1-container">
+    <div class="slider1 container">
+        <!-- <img src="slider/card-1.jpeg" alt=""> -->
+    </div>
+</div>
 
 
-
+<!-- slider 2 -->
 
 
     <!-- Footer -->
@@ -52,10 +85,29 @@
                         </div>                         
                     </form>
                 </div>
+
+                <div class="sotical-media">
+                    <a href=""><h3> تواصل معنا</h3></a>
+                    <div class="soitacl-icon">
+                        <ul>
+                            <li><a href=""><img src="icon/facebook.png" alt=""></a></li>
+                            <li><a href=""><img src="icon/twitter.png" alt=""></a></li>
+                            <li><a href=""><img src="icon/linked.png" alt=""></a></li>
+                            <li><a href=""><img src="icon/telegram.png" alt=""></a></li>
+                            <li><a href=""><img src="icon/twitter.png" alt=""></a></li>
+                            <li><a href=""><img src="icon/linked.png" alt=""></a></li>
+                            <li><a href=""><img src="icon/telegram.png" alt=""></a></li>
+
+                        </ul>
+                    </div>
+                </div>
+                
+               
             </div>
     
            <div class="footer-items ">
             <div class="header-text"><h3>  خدمة العملاء  </h3></div>
+            
             <div class="list-item">
                 <ul>
                     <li><a href="#">مبيعات الشركات</a></li>
@@ -68,7 +120,8 @@
                 </ul>
             </div>
             </div>
-          <div class="footer-items">
+         
+            <div class="footer-items">
             <div class="header-text"><h3>    خدمات جرير</h3></div>
             <div class="list-item">
                 <ul>
@@ -113,11 +166,35 @@
     
         </div>
        
+    
     </footer>
     
+    <div class="buttom">
+        <div class="pyment">
+            <ul>
+                <li><a href=""><img src="images/mada.jpg" alt=""></a></li>
+                <li><a href=""><img src="images/master.png" alt=""></a></li>
+                <li><a href=""><img src="images/qitaf.png" alt=""></a></li>
+                <li><a href=""><img src="images/visa.png" alt=""></a></li>
+                <li><a href=""><img src="images/american-express.png" alt=""></a></li>
+                
+
+            </ul>
+        </div>
+        <div class="copy-right">
+            <ul>
+                <li><a href="#">سياسة الخصوصية</a></li>
+                <li><a href="#"> شروط الخدمة</a></li>
+
+            </ul>
+            <p>جميع الحقوق محفوظة لمكتبة جرير   &copy;2021  </p>
+        </div>
+    </div>
     <!-- Footer !!-->
 
     <!-- script -->
-    <script src="js/main.js"></script>
+    <script src="js/main.js">
+
+    </script>
 </body>
 </html>

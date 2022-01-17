@@ -16,18 +16,47 @@ a{
     margin-left: auto;
     margin-right: auto;
 }
+
 nav{
     max-width: 1200px;
     background: #F9FaFC;
 }
+/* ********* */
+/* togle-bar */
+
+nav .togle-bar{
+    display: none;
+    background: #484848;
+    padding: 20px;
+    justify-content: space-between;
+    color:#fff;
+}
+
+nav .togle-bar .icon{
+    width: 30px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+nav .togle-bar .icon span{
+    width:30px;
+    border-top: 3px solid #fff;
+}
+/* togle-bar */
+/* ********* */
+
 nav ul{
+    display: flex;
     list-style: none;
     width: 100%;
-    display: flex;
     justify-content: space-between;
     border-bottom: 1px solid #e5e9f2;
-
 }
+
+nav ul #nav-bar-list{
+    display: flex;
+}
+
 nav ul li{
     display: inline-block;
     height: 40px;
@@ -36,6 +65,7 @@ nav ul li{
     border-right: 1px solid #e5e9f2;
    
 }
+
 nav ul li a{
     display: inline-block;
     text-decoration: none;
@@ -45,28 +75,111 @@ nav ul li a{
     font-size: 16px;
     font-weight: bold;
 }
+
 nav ul li a span{
     display: inline-block;
     margin-left: 5px;
 }
+
+
+
+/* ******** */
+/* box-search */
+/* ******** */
+header .box-search{
+    padding: 20px 0;
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+}
+
+header .box-search img{
+    width: 200px;
+}
+
+header .box-search .search {
+    line-height: 50px;
+    width: 70%;
+}
+
+header .box-search .search input{
+    width: 100%;
+    height: 40px;
+    border-radius: 20px;
+    padding: 0 20px;
+    background-color: #e5e9f2;
+    border: none;
+    outline: none;
+}
+
+header .box-search .crad{
+    line-height: 50px;
+}
+
+
+/* ***** */
+/* slider1 */
+/* ***** */
+
+.slider1{
+    height: 80vh;
+ 
+}
+
+.slider1{
+     width: 80%;
+     background-image: url("../slider/lock.jpg");
+     background-repeat: no-repeat;
+     background-size: cover;
+   
+    animation: mov-slider;
+    animation-duration: 8s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+    animation-fill-mode: backwards;
+  
+}
+@keyframes mov-slider{
+    0%{
+        background-image: url('../slider/card-1.jpeg');
+    }
+    25%{
+        background-image: url('../slider/lock.jpg');
+        /*transform: translateX(-100%); */   
+    }
+    70%{
+        background-image: url('../slider/post-06.jpg');
+        /*transform: translateX(-100%); */   
+    }
+}
+
+/* ******* */
+/*Footer*/
+/* ****** */
 footer
 { 
     display: flex;
     padding: 25px 25px;
     background: #333;
+    flex-wrap: wrap;
 }
+
 .container-footer{
     width: 1200px;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
 }
+
 footer .footer-items{
+    margin-top: 10px;
     width: 15%;
 }
+
 footer .subscriub{
 width: 25%;
 }
+
 footer .box-connect{
     margin: 10px;
     background-color: #484848;
@@ -74,11 +187,21 @@ footer .box-connect{
     padding: 12px;
     width: 100%;
 }
+
+footer .footer-items h3{
+    color: #a6a6a6;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #a6a6a6;
+    font-size: 14px;
+    
+    }
+
 footer .box-connect input{
 height: 35px;
 width: 100%;
 line-height: 35px;
 }
+
 footer .footer-items button{
     align-items: center;
     cursor: pointer;
@@ -91,26 +214,67 @@ footer .footer-items button{
     font-weight: 400;
     margin-top: 5px;
 }
+
 footer .box-connect .sub-input{
     position: relative;
 }
+
 footer .box-connect form span{
     position: absolute;
     display: inline-block;
     left:5%;
     line-height: 35px;
     opacity: 0.5;
-
  }
-footer .footer-items .header-text{
-    border-bottom: 1px solid #a6a6a6;
+
+ footer .sotical-media ul{
+     padding: 10px 0;
+ }
+
+ footer .sotical-media ul li{
+     display: inline;
+ }
+
+ footer .sotical-media ul li img{
+    width: 30px;
+    border-radius: 50%;
 }
-footer .footer-items h3{
-color: #a6a6a6;
-padding-bottom: 10px;
-}
-footer ul li{
+
+footer .list-item ul li{
+    display: block;
     line-height: 2;
     font-weight: 350;
     font-size: 16px;
+}
+
+/* ****** */
+/* buttom footer */
+/* ****** */
+
+ .buttom {
+     padding: 20px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background-color: #a6a6a6;
+}
+
+ .buttom .pyment{
+  width: 50%;  
+}
+
+.buttom ul li {
+display: inline-block;
+height: 50px;
+line-height: 50px;
+}
+
+.buttom ul li img {
+    width: 80px;
+    height: 50px;
+    }
+
+ .buttom .copy-right{
+    width: 50%;
 }
