@@ -421,5 +421,8 @@ line-height: 50px;
 .modal_container .login{
     display: none;
 }
+.modal_container a{
+    color: rgb(21, 113, 218);
+}
 
 
