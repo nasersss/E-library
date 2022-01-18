@@ -30,7 +30,7 @@
                 </div>
             </div>
             <ul id="nav-bar-list">
-                <li style="border-right: none;"> <a href="#" > <span><i class="fas fa-user"></i></span> ادخل لحسابك أو سجل الآن</a></li>
+                <li style="border-right: none;" id="modal-btn"> <a href="#" > <span><i class="fas fa-user"></i></span> ادخل لحسابك أو سجل الآن</a></li>
                 <li><a href="#"><span><i class="fas fa-star"></i></span> المفضلة</a></li>
                 <li><a href="#"><span><i class="fas fa-truck-moving"></i></span> تتبع الشحنة</a></li>
                 <li><a href="#"><span><i class="fas fa-cogs"></i></span> طلبات الصيانة</a></li>
@@ -49,10 +49,11 @@
 
         <div class="search">
             <input type="text" placeholder="البحث">
+            <i class="fas fa-search search-icon"></i>
         </div>
 
         <div class="crad">
-            <p><i class="fas fa-shopping"></i>icon</p>
+            <p><i class="fas fa-shopping-cart"></i></p>
         </div>
     </div>
 </header>
@@ -63,9 +64,6 @@
         <!-- <img src="slider/card-1.jpeg" alt=""> -->
     </div>
 </div>
-
-
-<!-- slider 2 -->
 
 
     <!-- Footer -->
@@ -190,6 +188,86 @@
             <p>جميع الحقوق محفوظة لمكتبة جرير   &copy;2021  </p>
         </div>
     </div>
+
+
+<!-- login and resisteration -->
+<div class="modal_container" id="modal">
+    <div class="register_log_modal">
+
+        <div class="timer">
+            <h3>بارد بإنشاء حساب مجاني   الوقت المتبقي</h3>
+             <p id="days"></p><b>يوم</b>
+             <p id="hours"></p><b>ساعة </b>
+             <p id="minut"></p><b>دقيقة </b> 
+           <p id="second"></p>  <b>ثانية </b>
+        </div>
+    
+        <span class="close" >&times;</span>
+        <div class="body">
+            <div class="register form">
+                <div class="header">
+                    <h2> إنشاء حساب جديد</h2>
+                </div>
+                <form action="" dir="rtl">
+                    <div class="phone">
+                       
+                        <input class=phon type="text" name="f-name" placeholder="التلفون" required="" >
+                        <select name="" id="">
+                            <option value="">رمز البلد</option>
+                            <option value="">+976</option>
+                            <option value="">+967</option>
+                            <option value="">+965</option>
+                        </select>
+                        
+                    </div>
+                    
+                <input  type="text" name="f-name" placeholder="الاسم الإول" required="" >
+                <input  type="text" name="l-name" placeholder="اسم العائلة" required="" >
+                <input   type="email" name="email" placeholder="الايميل" required="" >
+                <input   type="email" name="confirm-email" placeholder="تأكيد الايميل" required="" >
+                <input   type="password" name="password" placeholder="كلمة السر" required="" >
+                <div class="checkbox">
+                    <div class="check-item">
+                        <input type="checkbox" checked>
+                        <label >ِأوافق على <a href="">الشروط الاحكام</a></label>
+                        
+                    </div>
+                   <div class="check-item">
+                    <input type="checkbox" checked>
+                    <label >ِالتسجيل للانضمام للنشرة البريدية</label>
+              
+                   </div>
+                </div>
+                      <button type="submit" name="register" >إنشاء الحساب </button>
+                
+            </form>
+                <button id="login-btn">تسجيل الدخول</button>
+
+            </div>
+
+            <!-- login form -->
+            <div class="login form" dir="rtl">
+                <div class="header">
+                    <h2> تسجيل الدخول  </h2>
+                </div>
+                <form action="">
+                <input   type="email" name="email" placeholder="البريد الالكتروني أو رقم الجوال" required="" maxlength="25" minlength="4">
+                <input   type="password" name="password" placeholder="كلمة السر" required="" maxlength="25" minlength="4">
+                <button type="submit" name="register" style="background: crimson;color: aliceblue;">تسجيل الدخول</button>
+                </form>
+                <div>
+                    <p>ليس لديك حساب ؟؟</p>
+                    <button id="register-btn"> إنشاء حساب جديد</button>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+</div>
+<!-- login and resisteration -->
+
+
     <!-- Footer !!-->
 
     <!-- script -->

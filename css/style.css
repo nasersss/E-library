@@ -98,8 +98,17 @@ header .box-search img{
 }
 
 header .box-search .search {
+    position: relative;
     line-height: 50px;
     width: 70%;
+}
+
+header .box-search .search .search-icon{
+    position: absolute;
+    top:25%;
+    left: 2%;
+    opacity: 0.5;
+    font-size: 22px;
 }
 
 header .box-search .search input{
@@ -278,3 +287,139 @@ line-height: 50px;
  .buttom .copy-right{
     width: 50%;
 }
+
+/*Login Register Modal*/
+
+/*Timer*/
+.timer{
+    display: flex;
+    width: 100%;
+    height: 100px;
+    justify-content: space-between;
+    align-items: center;
+    color:red
+}
+
+/* modal_container */
+
+.modal_container{
+    background: #ccc;
+    position: absolute;
+    top:0%;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.5);
+    display: none;
+    z-index: 1000;
+    color:rgb(150, 144, 144);
+}
+.modal_container span{
+    font-size:50px;
+    color: rgb(236, 44, 44);
+}
+.modal_container span:hover{
+    font-size: 60px;
+    font-weight: bold;
+    color: crimson;
+    cursor: pointer;
+}
+.modal_container .register_log_modal{
+    background: #fff;
+    width: 50vw;
+    padding: 10px 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+@media (max-width:991px){
+    .modal_container .register_log_modal{
+    width: 90vw;
+    }
+}
+.modal_container .body .header{
+    border-bottom: 1px solid rgb(145, 143, 143);
+    width: 100%;
+    padding-bottom: 20px
+    
+}
+.modal_container .body .header h2{
+    text-align: center;
+}
+.modal_container #login-btn,#register-btn{
+   width: 100%;
+   padding: 10px;
+   
+   cursor: pointer;
+}
+
+.modal_container .body{
+    padding: 10px;
+}
+.modal_container .body form{
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.modal_container p{
+    font-size: 20px;
+    text-align: center;
+}
+.modal_container .body form input{
+    width: 100%;
+}
+.modal_container .body form input,select{
+    margin: 5px 0;
+    padding: 10px;
+    border: 1px solid #ccc;
+    outline: none;
+    font-size: 15px;
+    transition: 0.3s border-color ease; 
+    outline: none;
+    background: #9ca6b4;
+    border-radius: 5px;
+   
+}
+.modal_container .body .phone{
+    width: 100%;
+    display: flex;
+}
+.modal_container .body .phone input{
+    width:90%
+}
+
+
+.modal_container  .body form .checkbox{
+    width: 100%;
+}
+.modal_container .checkbox .check-item{
+    display: flex;
+}
+.modal_container .checkbox .check-item  input{
+    width: 10%;
+    height: 20px;
+}
+
+
+.modal_container button, .body form button{
+    width: 100%;
+    padding: 10px 20px;
+    margin: 5px 0;
+    border: none;
+    font-weight: 700;
+    font-size: 20px;
+    color: #35537d;
+    background-color: #fff;
+    border: 1px solid #fdeeed;
+    box-shadow: 0 5px 5px  rgba(0, 0, 0, 0.5);
+    transition-duration: .5s;
+    border-radius: 5px;  
+}
+
+.modal_container .login{
+    display: none;
+}
+
+
