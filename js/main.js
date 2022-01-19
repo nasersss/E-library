@@ -1,3 +1,4 @@
+/* navbar*/
 function myFunction() {
     var x = document.getElementById("nav-bar-list");
     if (x.style.display === "flex") {
@@ -8,6 +9,47 @@ function myFunction() {
   }
 
 
+
+  /* Slider */
+
+  const imageSlider = document.querySelectorAll('.slider img');
+
+  console.log (imageSlider);
+  //Get slider button
+
+  const next = document.querySelector('.next');
+  const prev = document.querySelector('.prev');
+
+  let sliderCount = 0 ;
+
+  next.addEventListener('click',()=>{
+    imageSlider[sliderCount].style.animationName = 'firstNext';
+    
+    if(sliderCount >=imageSlider.length-1){
+
+      sliderCount=0;
+    }
+    else{
+      sliderCount++;
+    }
+    imageSlider[sliderCount].style.animationName = 'second';
+
+  });
+
+  // prev
+
+  prev.addEventListener('click',()=>{
+    imageSlider[sliderCount].style.animationName = 'firstPrev';
+    
+    if(sliderCount=== 0){
+      sliderCount = imageSlider.length-1;
+    }
+    else{
+      sliderCount--;
+    }
+    imageSlider[sliderCount].style.animationName = 'secondPrev';
+
+  });
 
   
 /*  timer */
@@ -40,6 +82,9 @@ setInterval( ()=>{
   s.innerHTML = remainSec;
 
 },1000);
+
+
+
 
 /* pop rigister and login */
 

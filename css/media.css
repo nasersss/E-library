@@ -1,5 +1,5 @@
 
-/* **** */
+/* **Navbar** */
 /* medai */
 @media (max-width:991px){
     nav .togle-bar{
@@ -30,7 +30,7 @@
 }
 
 
-
+/* Search box */
 /* max-width:991px */
 @media (max-width:991px){
     header .box-search img{
@@ -44,6 +44,33 @@
      display: none;
     }
 }
+
+
+/* Slider */
+
+/* **************** */
+/* max-width:991px */
+
+@media (max-width:991px){
+    header  .slider-container{
+        height: 50vh;
+    }
+    header .slider-container .next,.prev{
+        position: absolute;
+        top: 45%;
+    }
+} 
+/* **************** */
+/* max-width:667px */
+@media (max-width:667px){
+   
+    header .slider-container .next,.prev{
+        position: absolute;
+        top: 40%;
+    }
+} 
+    
+
 
 
 /* Footer */
