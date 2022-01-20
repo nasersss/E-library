@@ -1,5 +1,5 @@
 *{
-    font-family: Tajawal,sans-serif;
+    font-family:Arial, Helvetica, sans-serif;
 
     padding: 0;
     margin: 0;
@@ -31,6 +31,7 @@ nav .togle-bar{
     padding: 20px;
     justify-content: space-between;
     color:#fff;
+    width: 100%;
 }
 
 nav .togle-bar .icon{
@@ -481,8 +482,207 @@ line-height: 50px;
 .modal_container .login{
     display: none;
 }
-.modal_container a{
+ a{
     color: rgb(21, 113, 218);
 }
 
 
+/* checkout  */
+
+
+.checkout-container{
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.heaader-checkout{
+    display: flex;
+    width: 100%;  
+}
+.check-card{
+    display: flex;
+    flex-wrap: wrap; 
+}
+.book{
+    width: 70%;
+}
+
+.card-product{
+    display: block;
+    margin-top: 20px;
+    width: 90%;
+    padding: 20px ;
+    border: 1px solid #ccc;
+    border-radius: 2px
+}
+.card-product .header{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+  
+}
+.card-product .header-details {
+    display: inherit;
+}
+.card-product .header-details>div{
+    margin-right: 10px;   
+}
+.card-product .header-details  h4{
+    font-size: 20px;
+}
+.card-product .header-details  p{
+    line-height: 40px;
+    color: rgb(128, 126, 126);
+    
+}
+.card-product .note-cart{
+    display: flex;
+    justify-content: space-between;
+
+}
+.card-product .note{
+    background: rgba(248, 206, 17, 0.144);
+    padding: 10px 20px;
+    margin-right: 20px;
+    border-right: 3px solid rgb(228, 149, 32);
+}
+.card-product .note p{
+    color: grey;
+}
+.card-product .note p b{
+    color: rgb(17, 16, 16);
+}
+.card-product .count{
+    display: flex;
+    border: 1px solid #ccc;
+    border-radius: 2px;
+    width: 60px;
+    height: 41px;
+}
+
+.card-product .count p{
+    width: 100px;
+    height: 40px;
+    background: #fff;
+    line-height: 40px;
+    text-align: center;
+}
+
+.card-product button{
+    display:inline-block;
+    height: 20px;
+    width: 25px;
+    font-size: 15x;
+    font-weight: 400;
+    border: 1px solid #ccc;
+    cursor: pointer;
+}
+.card-product .footer{
+    margin-top: 20px;
+    border-top: 1px solid #ccc;
+    padding-top: 10px;
+    font-size: 18px;
+    font-weight: bold;
+}
+.card-product .footer span{
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    color: #fff;
+    background: #000;
+    border-radius: 50%;
+    text-align: center;
+    margin-left: 10px;
+}
+.pyment{
+    width: 30%;  
+} 
+
+.pyment-card{
+    display: block;
+    padding: 20px ;
+    margin-top: 20px;
+    width: 99%;
+    border: 1px solid #ccc;
+}
+.pyment-card .header{
+    display: flex;
+    justify-content: space-between;
+}
+.pyment-card .body{
+ height: 100px;
+}
+.pyment-card p{
+    font-size: 16px;
+    font-weight: 800;
+}
+ 
+.pyment-card .footer button{
+    
+    width: 100%;
+    background: rgb(220, 20, 20);
+    color: #fff;
+    border: none;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 10px;
+}
+.pyment-card  p b{
+    font-size: 16px;
+    color: red;
+    font-weight: bold;
+}
+.red {
+    font-size: 17px;
+    font-weight: 800;
+    color: red;
+}
+.green{
+    color: rgb(126, 179, 46);
+}
+
+/* media width 991px */
+@media (max-width:991px){
+    .book{
+        width: 80%;
+    }
+    .pyment{
+        width: 50%;  
+    }  
+
+}
+/* media width 667px */
+@media (max-width:667px){
+    .book{
+        width: 100%;
+    }
+    .pyment{
+        width: 100%;  
+    } 
+    .card-product{
+        display: block;
+        margin-top: 20px;
+        width: 100%;
+    } 
+    p{
+        font-size: 13px;
+        font-weight: 500;
+    }
+  
+}
+/* media width 667px */
+@media (max-width:350px){
+
+    .card-product .header{
+        display: block;
+    }
+    .card-product .note-cart{
+        display: block;
+    }
+}
+
+/* Catogery*/
