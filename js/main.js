@@ -55,7 +55,7 @@ function myFunction() {
 /*  timer */
 setInterval( ()=>{
 
-  const DueDate = new Date('jan 22,2022 00:00:00').getTime();
+  const DueDate = new Date('jan 23,2022 00:00:00').getTime();
   const currentDate = new Date().getTime();
   const diff = DueDate - currentDate;
 

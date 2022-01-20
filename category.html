@@ -1,0 +1,690 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-library</title>
+
+    <!-- font-awesome -->
+    <!-- offline font-awesome -->
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/fontawesome.min.css">
+
+      <!-- online font-awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+        
+
+    <!-- style -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media.css">
+
+</head>
+<body dir="rtl">
+    
+    <!-- Header -->
+    <header>
+        <nav class="container">
+            <div class="togle-bar" >
+                <div class="icon" onclick="myFunction()">
+                   <span></span>
+                   <span></span>
+                    <span></span>
+                </div>
+                <div class="brand">
+                    <h3>القائمة</h3>
+                </div>
+            </div>
+            <ul id="nav-bar-list">
+                <li style="border-right: none;" id="modal-btn"> <a href="#" > <span><i class="fas fa-user"></i></span> ادخل لحسابك أو سجل الآن</a></li>
+                <li><a href="#"><span><i class="fas fa-star"></i></span> المفضلة</a></li>
+                <li><a href="#"><span><i class="fas fa-truck-moving"></i></span> تتبع الشحنة</a></li>
+                <li><a href="#"><span><i class="fas fa-cogs"></i></span> طلبات الصيانة</a></li>
+                <li><a href="#"><span><i class="fas fa-info-circle"></i></span> المساعدة</a></li>
+                <li><a href="#"> <span><i class="fas fa-map-marker-alt"></i></span> فروعنا</a></li>
+                <li><a href="#"><span></span> اليمن</a></li>
+                <li><a href="#"><span><i class="fas fa-language"></i> </span> Eenglish</a></li>
+            </ul>
+        </nav>
+    <!-- Header !!-->
+    <div class="box-search container">
+
+        <div class="logo">
+            <img src="images/logo.svg" alt="">
+        </div>
+
+        <div class="search">
+            <input type="text" placeholder="البحث">
+            <i class="fas fa-search search-icon"></i>
+        </div>
+
+        <div class="crad">
+            <p><i class="fas fa-shopping-cart"></i></p>
+        </div>
+    </div>
+    <!-- slider -->
+    <div class="timer">
+        <h3>اغتنم عروض بداية العام الوقت المتبقي </h3>
+       <div>
+        <p id="days" class="number"></p>
+        <p class="text-timer">يوم</p>
+       </div>
+       <p>:</p>
+        <div>
+            <p id="hours" class="number"></p>
+            <p class="text-timer">ساعة</p>
+        </div>
+        <p>:</p>
+        <div>
+            <p id="minut" class="number"></p>
+            <p class="text-timer">دقيقة </p> 
+        </div>
+        <p>:</p>
+        <div>
+            <p id="second" class="number"></p> 
+            <p class="text-timer">ثانية </p>
+        </div>
+    </div>
+    <div class="slider-container container">
+        <!-- arrow -->
+        <span class="next" ><i class="fas fa-arrow-circle-right"></i></span>
+        <span class="prev" ><i class="fas fa-arrow-circle-left"></i></span>
+    
+        <!-- slider -->
+        <div class="slider">
+            <img src="slider/1.png" alt="sllider1">
+            <img src="slider/2.jpg" alt="sllider2">
+            <img src="slider/3.jpg" alt="sllider3">
+            <img src="slider/4.jpg" alt="sllider3">
+        </div>
+
+    </div>
+</header>
+    <!-- Header !!!-->
+
+    <!-- Category -->
+    <div>
+      
+        <div class="cate-contianer container">
+            <div class="cate-header">
+                <ul>
+                    <li><a href="">الرئيسية</a></li>
+                    <li><a href="">الكتب العربية</a></li>
+                    <li><a href="">كتب إلكترونية</a></li>
+                </ul>
+            </div>
+            <div class="filter-container" >
+
+                <div class="box-filter">
+                   <span><i class="fas fa-book-open"></i></span> <input type="text"placeholder="ابحث بالاسم او بالصنف" id="Myinput"  onkeyup="searchFunc()">
+                        <div class="slelt-filter">
+                            <div class="header">
+                                <button>تصفح النتائج</button>
+                            </div>
+                            <div class="chckbox">
+                                <p>علامة تجارية</p>
+                                <input class="chk" type="checkbox">
+                            </div>
+                            <div class="chckbox">
+                                <p>السعر </p>
+                                <input  class="chk" type="checkbox">
+                            </div>
+                            <div class="progress">
+                                <p></p>
+                                <span></span>
+                                <p></p>
+                            </div>
+                                <div class="salary">
+                                    <p>ر س 5</p>
+                                    <p>ر س 150</p>
+                                </div>
+                            <div class="chckbox">
+                                <p>صيغة الكتاب </p>
+                                <input  class="chk" type="checkbox">
+                            </div>
+                        </div>
+                </div>
+
+                <div class="result">
+
+                    <div class="select-order">
+                        <label for="">الترتيب بحسب</label>
+                        <select name="oreder" id="">
+                            <option value="">الرجاء الاختيار</option>
+                            <option value="">السعر </option>
+                            <option value=""> الفئة</option>
+                            <option value=""> النوع</option>
+                            
+                        </select>
+                    </div>
+                    <div class="container-book" id="container-book">
+
+                        <!-- item1 -->
+
+                        <div class="items">
+                            <div class="img">
+                                    <img src="images/book/book1.jpg" alt="">
+                            </div>
+                            <div class="text">
+                                <h6 class="title"> <span><i class="fas fa-book-open"></i></span> كتاب إلكتروني</h6>
+                                <p class="star">
+                                    <i class="fas fa-star best"></i>
+                                    <i class="fas fa-star best "></i>
+                                    <i class="fas fa-star best "></i>
+                                    <i class="fas fa-star best "></i>
+                                    <i class="fas fa-star"></i>
+                                </p>
+                                <p class="name-book">لأنك الله  <span>(كتاب الكتروني)</span></p>
+                            </div>
+                            <div class="footer-item">
+                                <h6>99.99 <small>رس</small></h6>
+                                <p><small>شامل الضريبة</small></p>
+                                <p>صيغ أخري : <b>كتاب مطبوع</b></p>
+                                <div class="icon">
+                                    <p><i class="fas fa-star"></i></p>
+                                    <p class="shopping"><i class="fas fa-cart-plus"></i></p>
+                                    <p><i class="fas fa-exchange-alt"></i></p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- item1 -->
+
+      <!-- item1 -->
+
+      <div class="items">
+        <div class="img">
+                <img src="images/book/book2.jpg" alt="">
+        </div>
+        <div class="text">
+            <h6 class="title"><span ><i class="fas fa-book-open"></i></span>  كتاب ورقي </h6>
+            <!-- star -->
+            <p class="star">
+
+            </p>
+            <p class="name-book"> إحياء علوم الدين <span>(كتاب ورقي)</span></p>
+        </div>
+        <div class="footer-item">
+            <h6>99.99 <small>رس</small></h6>
+            <p><small>شامل الضريبة</small></p>
+            <p>صيغ أخري : <b>كتاب مطبوع</b></p>
+            <div class="icon">
+                <p><i class="fas fa-star"></i></p>
+                <p class="shopping"><i class="fas fa-cart-plus"></i></p>
+                <p><i class="fas fa-exchange-alt"></i></p>
+            </div>
+        </div>
+    </div>
+    <!-- item1 -->
+          <!-- item1 -->
+
+          <div class="items">
+            <div class="img">
+                    <img src="images/book/book3.jpg" alt="">
+            </div>
+            <div class="text">
+                <h6 class="title"><span><i class="fas fa-book-open"></i></span>  كتاب إلكتروني</h6>
+                <p class="star">
+                    <i class="fas fa-star best"></i>
+                    <i class="fas fa-star best"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </p>
+                <p class="name-book" >Smart Reading<span>(كتاب الكتروني)</span></p>
+            </div>
+            <div class="footer-item">
+                <h6>99.99 <small>رس</small></h6>
+                <p><small>شامل الضريبة</small></p>
+                <p>صيغ أخري : <b>كتاب مطبوع</b></p>
+                <div class="icon">
+                    <p><i class="fas fa-star"></i></p>
+                    <p class="shopping"><i class="fas fa-cart-plus"></i></p>
+                    <p><i class="fas fa-exchange-alt"></i></p>
+                </div>
+            </div>
+        </div>
+        <!-- item1 -->   
+          <!-- item1 -->
+
+          <div class="items">
+            <div class="img">
+                    <img src="images/book/book4.png" alt="">
+            </div>
+            <div class="text">
+                <h6 class="title"> <span><i class="fas fa-book-open"></i></span> كتاب ورقي</h6>
+                <p class="star">
+                    <i class="fas fa-star best"></i>
+                    <i class="fas fa-star best"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </p>
+                <p class="name-book" >التفكير السليم<span>(كتاب ورقي)</span></p>
+            </div>
+            <div class="footer-item">
+                <h6>99.99 <small>رس</small></h6>
+                <p><small>شامل الضريبة</small></p>
+                <p>صيغ أخري : <b>كتاب مطبوع</b></p>
+                <div class="icon">
+                    <p><i class="fas fa-star"></i></p>
+                    <p class="shopping"><i class="fas fa-cart-plus"></i></p>
+                    <p><i class="fas fa-exchange-alt"></i></p>
+                </div>
+            </div>
+        </div>
+        <!-- item1 -->  
+          <!-- item1 -->
+
+          <div class="items">
+            <div class="img">
+                    <img src="images/book/book5.jpg" alt="">
+            </div>
+            <div class="text">
+                <h6 class="title"><span><i class="fas fa-book-open"></i></span> كتاب ورقي </h6>
+                <p class="star">
+                    <i class="fas fa-star best"></i>
+                    <i class="fas fa-star best"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </p>
+                <p class="name-book" > Modern Manger Fundemental<span>(كتاب ورقي)</span></p>
+            </div>
+            <div class="footer-item">
+                <h6>99.99 <small>رس</small></h6>
+                <p><small>شامل الضريبة</small></p>
+                <p>صيغ أخري : <b>كتاب مطبوع</b></p>
+                <div class="icon">
+                    <p><i class="fas fa-star"></i></p>
+                    <p class="shopping"><i class="fas fa-cart-plus"></i></p>
+                    <p><i class="fas fa-exchange-alt"></i></p>
+                </div>
+            </div>
+        </div>
+        <!-- item1 -->  
+          <!-- item1 -->
+
+          <div class="items">
+            <div class="img">
+                    <img src="images/book/book6.jpg" alt="">
+            </div>
+            <div class="text">
+                <h6 class="title"> <span><i class="fas fa-book-open"></i></span> كتاب إلكتروني</h6>
+                <p class="star">
+                    <i class="fas fa-star best"></i>
+                    <i class="fas fa-star best"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </p>
+                <p class="name-book" >تعلم معنا<span>(كتاب الكتروني)</span></p>
+            </div>
+            <div class="footer-item">
+                <h6>99.99 <small>رس</small></h6>
+                <p><small>شامل الضريبة</small></p>
+                <p>صيغ أخري : <b>كتاب مطبوع</b></p>
+                <div class="icon">
+                    <p><i class="fas fa-star"></i></p>
+                    <p class="shopping"><i class="fas fa-cart-plus"></i></p>
+                    <p><i class="fas fa-exchange-alt"></i></p>
+                </div>
+            </div>
+        </div>
+        <!-- item1 -->  
+          <!-- item1 -->
+
+          <div class="items">
+            <div class="img">
+                    <img src="images/book/book7.jpg" alt="">
+            </div>
+            <div class="text">
+                <h6 class="title"><span><i class="fas fa-book-open"></i></span> كتاب إلكتروني </h6>
+                <p class="star">
+                    <i class="fas fa-star best"></i>
+                    <i class="fas fa-star best"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </p>
+                <p class="name-book" >gravity of us<span>(كتاب الكتروني)</span></p>
+            </div>
+            <div class="footer-item">
+                <h6>99.99 <small>رس</small></h6>
+                <p><small>شامل الضريبة</small></p>
+                <p>صيغ أخري : <b>كتاب مطبوع</b></p>
+                <div class="icon">
+                    <p><i class="fas fa-star"></i></p>
+                    <p class="shopping"><i class="fas fa-cart-plus"></i></p>
+                    <p><i class="fas fa-exchange-alt"></i></p>
+                </div>
+            </div>
+        </div>
+        <!-- item1 -->  
+          <!-- item1 -->
+
+          <div class="items">
+            <div class="img">
+                    <img src="images/book/book8.png" alt="">
+            </div>
+            <div class="text">
+                <h6 class="title"><span><i class="fas fa-book-open"></i></span> كتاب إلكتروني </h6>
+                <p class="star">
+                    <i class="fas fa-star best"></i>
+                    <i class="fas fa-star best"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </p>
+                <p class="name-book" > كتالوج الحب <span>(كتاب الكتروني)</span></p>
+            </div>
+            <div class="footer-item">
+                <h6>99.99 <small>رس</small></h6>
+                <p><small>شامل الضريبة</small></p>
+                <p>صيغ أخري : <b>كتاب مطبوع</b></p>
+                <div class="icon">
+                    <p><i class="fas fa-star"></i></p>
+                    <p class="shopping"><i class="fas fa-cart-plus"></i></p>
+                    <p><i class="fas fa-exchange-alt"></i></p>
+                </div>
+            </div>
+        </div>
+        <!-- item1 -->  
+          <!-- item1 -->
+
+          <div class="items">
+            <div class="img">
+                    <img src="images/book/book9.png" alt="">
+            </div>
+            <div class="text">
+                <h6 class="title"><span><i class="fas fa-book-open"></i></span> كتاب إلكتروني</h6>
+                <p class="star">
+                    <i class="fas fa-star best"></i>
+                    <i class="fas fa-star best"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </p>
+                <p class="name-book" > Angular 2+ <span>(كتاب الكتروني)</span></p>
+            </div>
+            <div class="footer-item">
+                <h6>99.99 <small>رس</small></h6>
+                <p><small>شامل الضريبة</small></p>
+                <p>صيغ أخري : <b>كتاب مطبوع</b></p>
+                <div class="icon">
+                    <p><i class="fas fa-star"></i></p>
+                    <p class="shopping"><i class="fas fa-cart-plus"></i></p>
+                    <p><i class="fas fa-exchange-alt"></i></p>
+                </div>
+            </div>
+        </div>
+        <!-- item1 -->
+          <!-- item1 -->
+
+          <div class="items">
+            <div class="img">
+                    <img src="images/book/book10.png" alt="">
+            </div>
+            <div class="text">
+                <h6 class="title"><span><i class="fas fa-book-open"></i></span> كتاب إلكتروني </h6>
+                <p class="star">
+                    <i class="fas fa-star best"></i>
+                    <i class="fas fa-star best"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </p>
+                <p class="name-book" >Android<span>(كتاب الكتروني)</span></p>
+            </div>
+            <div class="footer-item">
+                <h6>99.99 <small>رس</small></h6>
+                <p><small>شامل الضريبة</small></p>
+                <p>صيغ أخري : <b>كتاب مطبوع</b></p>
+                <div class="icon">
+                    <p><i class="fas fa-star"></i></p>
+                    <p class="shopping"><i class="fas fa-cart-plus"></i></p>
+                    <p><i class="fas fa-exchange-alt"></i></p>
+                </div>
+            </div>
+        </div>
+        <!-- item1 --> 
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+     <!-- Category!!!! -->
+
+     
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container-footer container">
+
+            <div class="footer-items subscriub">
+                <div class="header-text"><h3> اشترك في النشرة البريدية</h3></div>
+                <div class="box-connect">
+                    <form action="">
+                        <div class="sub-input">
+                            <input type="text" placeholder="إدخل البريد الالكتروني ">
+                           <span> <i class="fas fa-envelope-open-text"></i></span>   
+                        </div>
+                        <div>
+                           <button type="submit">إشتراك </button>
+                        </div>                         
+                    </form>
+                </div>
+
+                <div class="sotical-media">
+                    <a href=""><h3> تواصل معنا</h3></a>
+                    <div class="soitacl-icon">
+                        <ul>
+                            <li><a href=""><img src="icon/facebook.png" alt=""></a></li>
+                            <li><a href=""><img src="icon/twitter.png" alt=""></a></li>
+                            <li><a href=""><img src="icon/linked.png" alt=""></a></li>
+                            <li><a href=""><img src="icon/telegram.png" alt=""></a></li>
+                            <li><a href=""><img src="icon/twitter.png" alt=""></a></li>
+                            <li><a href=""><img src="icon/linked.png" alt=""></a></li>
+                            <li><a href=""><img src="icon/telegram.png" alt=""></a></li>
+
+                        </ul>
+                    </div>
+                </div>
+                
+               
+            </div>
+    
+           <div class="footer-items ">
+            <div class="header-text"><h3>  خدمة العملاء  </h3></div>
+            
+            <div class="list-item">
+                <ul>
+                    <li><a href="#">مبيعات الشركات</a></li>
+                    <li><a href="">الأسئلة المتكررة</a></li>
+                    <li><a href="">دليل التسوق والمطبوعات</a></li>
+                    <li><a href="">مواقع المعارض</a></li>
+                    <li><a href="">سياسة الضمان</a></li>
+                    <li><a href="">سياسة الاسترجاع والاستبدال</a></li>
+                    <li><a href="">اتصل بنا</a></li>
+                </ul>
+            </div>
+            </div>
+         
+            <div class="footer-items">
+            <div class="header-text"><h3>    خدمات جرير</h3></div>
+            <div class="list-item">
+                <ul>
+                    <li><a href="">تذاكر جرير</a></li>
+                    <li><a href="">خدمة تقسيط المشتريات</a></li>
+                    <li><a href="">خدمات ما بعد البيع</a></li>
+                    <li><a href="">خدمة الحماية الشاملة</a></li>
+                    <li><a href="">خدمة تمديد الضمان</a></li>
+                    <li><a href="">حماية أجهزة آبل</a></li>
+                    <li><a href="">بطاقة خصم جرير</a></li>
+                    <li><a href="">بطاقة جرير للهدايا</a></li>
+                </ul>
+            </div>    
+        </div>
+    
+          <div class="footer-items">
+            <div class="header-text"><h3>  روابط سريعة  </h3></div>
+            <div class="list-item">
+                <ul>
+                    <li><a href="#"> إصدارات جرير</a></li>
+                    <li><a href="">قارئ جرير</a></li>
+                    <li><a href="">شركاء برامج المكافئات</a></li>
+                    <li><a href="">خدمات شركات الإتصالات</a></li>
+        
+                </ul>
+            </div>
+        </div>
+    
+          <div class="footer-items">
+            <div class="header-text"><h3>  عن جرير   </h3></div>
+            <div class="list-item">
+                <ul>
+                    <li><a href="#"> من نحن</a></li>
+                    <li><a href=""> الحوكمة</a></li>
+                    <li><a href="">علاقات المستثمرين</a></li>
+                    <li><a href=""> الاستدامة</a></li>
+                    <li><a href=""> الاحبار</a></li>
+                    <li><a href=""><h3>فرص العمل</h3></a></li>
+                </ul>
+            </div>
+        </div>
+    
+        </div>
+       
+    
+    </footer>
+    
+    <div class="buttom">
+        <div class="pyment">
+            <ul>
+                <li><a href=""><img src="images/mada.jpg" alt=""></a></li>
+                <li><a href=""><img src="images/master.png" alt=""></a></li>
+                <li><a href=""><img src="images/qitaf.png" alt=""></a></li>
+                <li><a href=""><img src="images/visa.png" alt=""></a></li>
+                <li><a href=""><img src="images/american-express.png" alt=""></a></li>
+                
+
+            </ul>
+        </div>
+        <div class="copy-right">
+            <ul>
+                <li><a href="#">سياسة الخصوصية</a></li>
+                <li><a href="#"> شروط الخدمة</a></li>
+
+            </ul>
+            <p>جميع الحقوق محفوظة لمكتبة جرير   &copy;2021  </p>
+        </div>
+    </div>
+
+
+<!-- login and resisteration -->
+<div class="modal_container" id="modal">
+    <div class="register_log_modal">
+
+       
+        <span class="close" >&times;</span>
+        <div class="body">
+            <div class="register form">
+                <div class="header">
+                    <h2> إنشاء حساب جديد</h2>
+                </div>
+                <form action="" dir="rtl">
+                    <div class="phone">
+                       
+                        <input class=phon type="text" name="f-name" placeholder="التلفون" required="" >
+                        <select name="" id="">
+                            <option value="">رمز البلد</option>
+                            <option value="">+976</option>
+                            <option value="">+967</option>
+                            <option value="">+965</option>
+                        </select>
+                        
+                    </div>
+                    
+                <input  type="text" name="f-name" placeholder="الاسم الإول" required="" >
+                <input  type="text" name="l-name" placeholder="اسم العائلة" required="" >
+                <input   type="email" name="email" placeholder="الايميل" required="" >
+                <input   type="email" name="confirm-email" placeholder="تأكيد الايميل" required="" >
+                <input   type="password" name="password" placeholder="كلمة السر" required="" >
+                <div class="checkbox">
+                    <div class="check-item">
+                        <input type="checkbox" checked>
+                        <label >ِأوافق على <a href="">الشروط الاحكام</a></label>
+                        
+                    </div>
+                   <div class="check-item">
+                    <input type="checkbox" checked>
+                    <label >ِالتسجيل للانضمام للنشرة البريدية</label>
+              
+                   </div>
+                </div>
+                      <button type="submit" name="register" >إنشاء الحساب </button>
+                
+            </form>
+                <button id="login-btn">تسجيل الدخول</button>
+
+            </div>
+
+            <!-- login form -->
+            <div class="login form" dir="rtl">
+                <div class="header">
+                    <h2> تسجيل الدخول  </h2>
+                </div>
+                <form action="">
+                <input   type="email" name="email" placeholder="البريد الالكتروني أو رقم الجوال" required="" maxlength="25" minlength="4">
+                <input   type="password" name="password" placeholder="كلمة السر" required="" maxlength="25" minlength="4">
+                <button type="submit" name="register" style="background: crimson;color: aliceblue;">تسجيل الدخول</button>
+                </form>
+                <div>
+                    <p>ليس لديك حساب ؟؟</p>
+                    <button id="register-btn"> إنشاء حساب جديد</button>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+</div>
+<!-- login and resisteration -->
+
+
+    <!-- Footer !!-->
+
+   <script>
+        const searchFunc = () =>{
+
+let filter =document.getElementById("Myinput").value;
+let boxFilter = document.getElementById("container-book");
+let allproduct = boxFilter.getElementsByClassName('items');
+
+    for(var i = 0 ;i<allproduct.length;i++){
+
+        let title = allproduct[i].getElementsByTagName("h6")[0];
+        let name = allproduct[i].getElementsByClassName("name-book")[0];
+
+        if(title || name){
+            let titlText = title.textContent || title.innerHTML;
+            let nameText = name.textContent || name.innerHTML;
+            if((titlText.indexOf(filter) > -1) || nameText.indexOf(filter) > -1 ){
+                allproduct[i].style.display  =  "";
+        }
+        else{
+            allproduct[i].style.display ="none";
+        }
+
+        }         
+    }
+
+}
+
+   </script>
+   
+   <script src="js/main.js">
+    </script>
+</body>
+</html>

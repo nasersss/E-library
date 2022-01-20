@@ -71,6 +71,33 @@
 } 
     
 
+/* Category Media  */
+/* max-width:991px */
+@media (max-width:991px){
+    .filter-container .box-filter{
+        width: 30%;
+    }
+    .filter-container .result{
+        margin: 10px auto;
+        width: 70%;
+    }
+}
+/*  max-width:667px*/
+@media (max-width:667px){
+    .timer h3{
+        width: 100%;
+        margin: 10px;
+        text-align: center;
+    }
+    .filter-container .box-filter{
+        width: 50%;
+    }
+    .filter-container .result{
+        margin: 10px auto;
+        width: 90%;
+    }
+}
+
 
 
 /* Footer */
