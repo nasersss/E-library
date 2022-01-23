@@ -1,14 +1,711 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ar">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Details</title>
-</head>
-<body>
+    <title>تفاصيل الكتاب </title>
+     <!-- font-awesome -->
+    <!-- offline font-awesome -->
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/fontawesome.min.css">
 
+      <!-- online font-awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+        
+
+    <!-- style -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/slider.css">
+    <link rel="stylesheet" href="css/media.css">
+
+</head>
+<body dir="rtl" >
+
+    <!-- Header -->
+    <header>
+        <nav class="container">
+            <div class="togle-bar" >
+                <div class="icon" onclick="myFunction()">
+                   <span></span>
+                   <span></span>
+                    <span></span>
+                </div>
+                <div class="brand">
+                    <h3>القائمة</h3>
+                </div>
+            </div>
+            <ul id="nav-bar-list">
+                <li style="border-right: none;" id="modal-btn"> <a href="#" > <span><i class="fas fa-user"></i></span> ادخل لحسابك أو سجل الآن</a></li>
+                <li><a href="#"><span><i class="fas fa-star"></i></span> المفضلة</a></li>
+                <li><a href="#"><span><i class="fas fa-truck-moving"></i></span> تتبع الشحنة</a></li>
+                <li><a href="#"><span><i class="fas fa-cogs"></i></span> طلبات الصيانة</a></li>
+                <li><a href="#"><span><i class="fas fa-info-circle"></i></span> المساعدة</a></li>
+                <li><a href="#"> <span><i class="fas fa-map-marker-alt"></i></span> فروعنا</a></li>
+                <li><a href="#"><span></span> اليمن</a></li>
+                <li><a href="#"><span><i class="fas fa-language"></i> </span> Eenglish</a></li>
+            </ul>
+        </nav>
+   <!-- Navbar!!! -->
+
+    <div class="box-search container">
+
+        <div class="logo">
+            <img src="images/logo.svg" alt="">
+        </div>
+
+        <div class="search">
+            <input type="text" placeholder="البحث">
+            <i class="fas fa-search search-icon"></i>
+        </div>
+
+        <div class="crad">
+            <p><i class="fas fa-shopping-cart"></i></p>
+        </div>
+    </div>
+   
+    <!-- slider -->
+    <div class="timer">
+        <h3>اغتنم عروض بداية العام الوقت المتبقي </h3>
+       <div>
+        <p id="days" class="number"></p>
+        <p class="text-timer">يوم</p>
+       </div>
+       <p>:</p>
+        <div>
+            <p id="hours" class="number"></p>
+            <p class="text-timer">ساعة</p>
+        </div>
+        <p>:</p>
+        <div>
+            <p id="minut" class="number"></p>
+            <p class="text-timer">دقيقة </p> 
+        </div>
+        <p>:</p>
+        <div>
+            <p id="second" class="number"></p> 
+            <p class="text-timer">ثانية </p>
+        </div>
+    </div>
+    <div class="slider-container container">
+        <!-- arrow -->
+        <span class="next" >&#10094;</span>
+        <span class="prev" >&#10095;</span>
+        <!-- slider -->
+        <div class="slider">
+            <img src="slider/1.png" alt="sllider1">
+            <img src="slider/2.jpg" alt="sllider2">
+            <img src="slider/3.jpg" alt="sllider3">
+            <img src="slider/4.jpg" alt="sllider3">
+        </div>
+
+    </div>
+    <!-- slider -->
+</div>
+</header>
+ <!-- Header !!-->
+
+<!-- main  -->
+<main>
+    <!-- detailes-section -->
+    <section class="container">
+        <div class="detail-container">
+            <div class="header-deta">
+                <div><a href="#">الرئيسية</a> <span>/</span></div> 
+                <div><a href="#">الكتب العربية</a> <span>/</span> </div>
+                <div><a href="#">كتب إلكترونية</a> </div>
+                <span>/</span> 
+                <div><a href="#">لإنك الله كتاب إلكتروني</a></div> 
+            </div>
+            <div class="body-deta">
+                <!-- img--box -->
+                <div>
+                    <div class="img-box">
+                        <div class="img">
+                            <img src="images/book/book1.jpg" alt="product">
+                        </div>
+                        <div class="slide-img">
+                            <img src="images/book/book1.jpg" alt="product">
+                            <img src="images/book/book1.jpg" alt="product">
+                            <img src="images/book/book1.jpg" alt="product">
+                        </div>
+                    </div>
+                </div>
+                  <!-- img--box -->
+                <!-- details -->
+                <div class="details">
+                    <div class="head">
+                        <h4 class="bold larg">لأنك الله ( <span class="black">كتاب إلكتروني</span> )</h4>
+                        <p  class="blue">عرض المزيد</p>
+                        <p class="red-c larg bold">99.9 <small>رس</small></p>
+                        <p><small class="l-gray-c">شامل الضريبة</small></p>
+                    </div>
+                    <div class="body-details">
+                        <div>
+                            <p>وحدة البيع : <span>Each</span></p>
+                            <p class="blue-c">
+                                <span class="star">
+                                    <i class="fas fa-star best"></i>
+                                    <i class="fas fa-star best"></i>
+                                    <i class="fas fa-star best"></i>
+                                    <i class="fas fa-star best"></i>
+                                </span>
+                                ( <span>15</span>  المراجعات)
+                            </p>
+                            <p class="d-gray-c">
+                                رقم الصنف 
+                                <span class="d-gray-c">JBB41056 </span>
+                                 رقم المنتج
+                                <span> 5</span>
+                            </p>
+                        </div>
+                    </div>
+                    <div>
+                        <p>الصيغ المتوفرة</p>
+                        <div class="foot-container">
+                            <!-- typ1 -->
+                            <div class="foot">
+
+                                <div class="active-prod pro-typ">
+                                    <div class="active active-type"></div>
+                                    <p class="type"> كتاب إلكتروني
+                                       
+                                    </p>
+                                    <small>?</small>
+                                </div>
+                                <div>
+                                    <p class="price red-c bold">
+                                        99.9 <small>رس</small>
+                                    </p>
+                                    <small class="small l-gray-c">شامل الضريبة</small>
+                                </div>
+                            </div>
+                             <!-- typ1 --> 
+                              <!-- typ2 -->
+                            <div class="foot">
+
+                                <div class="active-prod pro-typ">
+                                    <div class="active"></div>
+                                    <p class="type"> كتاب إلكتروني
+                                       
+                                    </p>
+                                    <small>?</small>
+                                </div>
+                                <div>
+                                    <p class="price red-c bold">
+                                        99.9 <small>رس</small>
+                                    </p>
+                                    <small class="small l-gray-c">شامل الضريبة</small>
+                                </div>
+                            </div>
+                             <!-- typ2 -->   
+                        </div>
+                    </div>
+                </div>
+     <!-- details -->
+
+     <!-- add to cart -->
+                <div class="add-cart">
+                    <!-- first div -->
+                    <div class="first-div">
+                        <div class="cart-not">
+                            <div class="note">
+                                <p><b>ملاحظة </b> هذا المنتج رقمي وسيتم توصيته من خلال البريد الالكتروني</p>
+                                <p><a href="#" class="blue-c">إقراء المزيد </a></p>
+                            </div>
+                        </div>
+                        <div class="button">
+                            <select name="number_Product" id="">
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                            </select>
+                            <button>   <i class="fas fa-cart-plus"></i> إضافة إلى السلة</button>
+                        </div>
+                        <div class="type-shopping">
+                            <p class="shopping bold">
+                                <span><i class="fas fa-cart-plus"></i></span>
+                                تسوق آمن<span><a href="">?</a> </span>
+                            </p>
+
+                            <p class="shopping bold">
+                                <span><i class="fas fa-cart-plus"></i></span>
+                                 أصلي ومضمون<span><a href="">?</a> </span>
+                            </p>
+
+                            <p class="shopping bold">
+                                <span><i class="fas fa-cart-plus"></i></span>
+                                 شحن سريع ومجاني<span><a href="">?</a> </span>
+                            </p>
+                        </div>
+                        <div class="sharing">
+
+                            <button> <i class="fas fa-cart-plus"></i>مشاركة</button>
+                            <button> <i class="fas fa-cart-plus"></i>المفضلة</button>
+                            <button> <i class="fas fa-cart-plus"></i>مقارنة</button>
+
+                        </div>
+                    </div>
+                    <!-- second div -->
+                    <div class="second-div">
+                        <div class="sharing">
+
+                            <button> <i class="fas fa-cart-plus"></i>مشاركة</button>
+                            <button> <i class="fas fa-cart-plus"></i>المفضلة</button>
+                            <button> <i class="fas fa-cart-plus"></i>مقارنة</button>
+
+                        </div>
+                    </div>
+                </div>
+     <!-- add to cart -->
+
+            </div>
+        </div>
+    </section>
+    <section >
+        <div class="description">
+            <p class="container">
+                كتاب يتحدث عن بعض أسماء الله الحسنى وكيف تعيشها في حياتنا حرص المؤلف أن يكون الكتاب مناسبا لمن هم متوسطي الثقافة ويكون مناسبا للمحتاج والمريض والسليم
+            </p>
+        </div>
+        <!-- Table information -->
+        <div class="table-info container">
+           <div class="title-info">
+               <h3>المواصفات</h3>
+           </div>
+           <div class="info-row">
+                   <p  class="title-info">رقم الصنف</p>
+                   <p class="info ">JBB41056</p>
+            </div>
+            <div class="info-row">
+                   <p  class="title-info">رقم المنتج</p>
+                   <p class="info ">4</p>
+            </div>
+            <div class="info-row">
+                <p  class="title-info"> المؤلف</p>
+                <p class="info ">علي جابر الفيفي</p>
+            </div>
+            <div class="info-row">
+                <p  class="title-info">الناشر </p>
+                <p class="info ">دار الحضارة للنشر والتوزيع</p>
+            </div>
+            <div class="info-row">
+                <p  class="title-info"> تاريخ النشر</p>
+                <p class="info ">2016</p>
+            </div>
+            <div class="info-row">
+                <p  class="title-info"> صيغة  الكتار</p>
+                <p class="info ">Ebook</p>
+            </div>
+            <div class="info-row">
+                <p  class="title-info"> عدد الصفحات</p>
+                <p class="info ">182</p>
+            </div>
+            <div class="info-row">
+                <p  class="title-info">  صيغة الملف</p>
+                <p class="info ">ePub</p>
+            </div>
+            <div class="info-row">
+                <p  class="title-info">اللغة</p>
+                <p class="info ">عربي</p>
+            </div>
+            <p class="low-view">عرض أقل  /\</p>
+        </div>
+           <!-- Table information -->
+    </section>
+    <!-- detailes-section -->
+
+    <section class="user-comment ">
+        <div class="user-commt-title container">
+            <h3>مراجعات العملاء</h3>
+            <button>+ اكتب مراجعتك</button>
+        </div>
+        <div class="body-comment container">
+            <div class="comment-info first">
+               <div>
+                <p class="bold">good</p>
+                <p class="user-name"> ناصر الغيثي</p>
+               </div>
+                <p>جميل جدا</p>
+            </div>
+
+            <div class="comment-info">
+                <div>
+                 <p class="bold">good</p>
+                 <p class="user-name"> ناصر الغيثي</p>
+                </div>
+                 <p>جميل جدا</p>
+             </div>
+
+             <div class="comment-info">
+                <div>
+                 <p class="bold">good</p>
+                 <p class="user-name"> ناصر الغيثي</p>
+                </div>
+                 <p>جميل جدا</p>
+             </div>
+             <p class="low-view"> اظهار جميع المراجعات ( <span>15</span> )  ></p>
+        </div>
+    </section>
+
+    <!-- image product sectuion -->
+    <section class="img-product">
+        <div class="container">
+            <div class="title">
+                <h3>منتجات مشابهة
+                </h3>
+            </div>
+
+<!-- all image poduct -->
+
+<div class="container-book section-container" id="container-book">
+    <!-- arrow -->
+        <a class="prev" id="slide-left">&#10094;</a>
+        <a class="next"id="slide-right" >&#10095;</a>
+    <!-- arrow -->
+
+        <!-- item1 -->
+        <div class="items">
+        <div class="img">
+                <img src="images/book/book10.png" alt="">
+        </div>
+        <div class="text">
+            <h3 class="title">ضعف الأمة وهزيمتها النفسية المشكلة والحل</h3>
+        </div>
+        <div class="footer-item">
+            <h6>99.99 <small>رس</small></h6>
+        </div>
+        </div>
+        <!-- item1 -->
+         <!-- item1 -->
+         <div class="items">
+            <div class="img">
+                    <img src="images/book/book10.png" alt="">
+            </div>
+            <div class="text">
+                <h3 class="title">ضعف الأمة وهزيمتها النفسية المشكلة والحل</h3>
+            </div>
+            <div class="footer-item">
+                <h6>99.99 <small>رس</small></h6>
+            </div>
+            </div>
+            <!-- item1 -->
+             <!-- item1 -->
+        <div class="items">
+            <div class="img">
+                    <img src="images/book/book2.jpg" alt="">
+            </div>
+            <div class="text">
+                <h3 class="title">إحياء علوم الدين</h3>
+            </div>
+            <div class="footer-item">
+                <h6>99.99 <small>رس</small></h6>
+            </div>
+            </div>
+            <!-- item1 -->
+             <!-- item1 -->
+        <div class="items">
+            <div class="img">
+                    <img src="images/book/book3.jpg" alt="">
+            </div>
+            <div class="text">
+                <h3 class="title">كتالوج الحب</h3>
+            </div>
+            <div class="footer-item">
+                <h6>99.99 <small>رس</small></h6>
+            </div>
+            </div>
+            <!-- item1 -->
+             <!-- item1 -->
+        <div class="items">
+            <div class="img">
+                    <img src="images/book/book4.png" alt="">
+            </div>
+            <div class="text">
+                <h3 class="title">ضعف الأمة وهزيمتها النفسية المشكلة والحل</h3>
+            </div>
+            <div class="footer-item">
+                <h6>99.99 <small>رس</small></h6>
+            </div>
+            </div>
+            <!-- item1 -->
+             <!-- item1 -->
+        <div class="items">
+            <div class="img">
+                    <img src="images/book/book5.jpg" alt="">
+            </div>
+            <div class="text">
+                <h3 class="title">ضعف الأمة وهزيمتها النفسية المشكلة والحل</h3>
+            </div>
+            <div class="footer-item">
+                <h6>99.99 <small>رس</small></h6>
+            </div>
+            </div>
+            <!-- item1 -->
+             <!-- item1 -->
+        <div class="items">
+            <div class="img">
+                    <img src="images/book/book10.png" alt="">
+            </div>
+            <div class="text">
+                <h3 class="title">ضعف الأمة وهزيمتها النفسية المشكلة والحل</h3>
+            </div>
+            <div class="footer-item">
+                <h6>99.99 <small>رس</small></h6>
+            </div>
+            </div>
+            <!-- item1 -->
+             <!-- item1 -->
+        <div class="items">
+            <div class="img">
+                    <img src="images/book/book10.png" alt="">
+            </div>
+            <div class="text">
+                <h3 class="title">ضعف الأمة وهزيمتها النفسية المشكلة والحل</h3>
+            </div>
+            <div class="footer-item">
+                <h6>99.99 <small>رس</small></h6>
+            </div>
+            </div>
+            <!-- item1 -->
+             <!-- item1 -->
+        <div class="items">
+            <div class="img">
+                    <img src="images/book/book10.png" alt="">
+            </div>
+            <div class="text">
+                <h3 class="title">ضعف الأمة وهزيمتها النفسية المشكلة والحل</h3>
+            </div>
+            <div class="footer-item">
+                <h6>99.99 <small>رس</small></h6>
+            </div>
+            </div>
+            <!-- item1 -->
+             <!-- item1 -->
+        <div class="items">
+            <div class="img">
+                    <img src="images/book/book1.jpg" alt="">
+            </div>
+            <div class="text">
+                <h3 class="title">ضعف الأمة وهزيمتها النفسية المشكلة والحل</h3>
+            </div>
+            <div class="footer-item">
+                <h6>99.99 <small>رس</small></h6>
+            </div>
+            </div>
+            <!-- item1 -->
+        
+        
+        
+</div>
+
+<!-- all image poduct -->
+
+        </div>
+        
+
+    </section>
+     <!-- image product sectuion !!! -->
+    </main>
+<!-- main !!!!-->
+    <!-- Footer -->
+    <footer>
+        <div class="container-footer ">
+
+            <div class="footer-items subscriub">
+                <div class="header-text"><h3> اشترك في النشرة البريدية</h3></div>
+                <div class="box-connect">
+                    <form action="">
+                        <div class="sub-input">
+                            <input type="text" placeholder="إدخل البريد الالكتروني ">
+                           <span> <i class="fas fa-envelope-open-text"></i></span>   
+                        </div>
+                        <div>
+                           <button type="submit">إشتراك </button>
+                        </div>                         
+                    </form>
+                </div>
+
+                <div class="sotical-media">
+                    <a href=""><h3> تواصل معنا</h3></a>
+                    <div class="soitacl-icon">
+                        <ul>
+                            <li><a href=""><img src="icon/facebook.png" alt=""></a></li>
+                            <li><a href=""><img src="icon/twitter.png" alt=""></a></li>
+                            <li><a href=""><img src="icon/linked.png" alt=""></a></li>
+                            <li><a href=""><img src="icon/telegram.png" alt=""></a></li>
+                            <li><a href=""><img src="icon/twitter.png" alt=""></a></li>
+                            <li><a href=""><img src="icon/linked.png" alt=""></a></li>
+                            <li><a href=""><img src="icon/telegram.png" alt=""></a></li>
+
+                        </ul>
+                    </div>
+                </div>
+                
+               
+            </div>
     
+           <div class="footer-items ">
+            <div class="header-text"><h3>  خدمة العملاء  </h3></div>
+            
+            <div class="list-item">
+                <ul>
+                    <li><a href="#">مبيعات الشركات</a></li>
+                    <li><a href="">الأسئلة المتكررة</a></li>
+                    <li><a href="">دليل التسوق والمطبوعات</a></li>
+                    <li><a href="">مواقع المعارض</a></li>
+                    <li><a href="">سياسة الضمان</a></li>
+                    <li><a href="">سياسة الاسترجاع والاستبدال</a></li>
+                    <li><a href="">اتصل بنا</a></li>
+                </ul>
+            </div>
+            </div>
+         
+            <div class="footer-items">
+            <div class="header-text"><h3>    خدمات جرير</h3></div>
+            <div class="list-item">
+                <ul>
+                    <li><a href="">تذاكر جرير</a></li>
+                    <li><a href="">خدمة تقسيط المشتريات</a></li>
+                    <li><a href="">خدمات ما بعد البيع</a></li>
+                    <li><a href="">خدمة الحماية الشاملة</a></li>
+                    <li><a href="">خدمة تمديد الضمان</a></li>
+                    <li><a href="">حماية أجهزة آبل</a></li>
+                    <li><a href="">بطاقة خصم جرير</a></li>
+                    <li><a href="">بطاقة جرير للهدايا</a></li>
+                </ul>
+            </div>    
+        </div>
     
+          <div class="footer-items">
+            <div class="header-text"><h3>  روابط سريعة  </h3></div>
+            <div class="list-item">
+                <ul>
+                    <li><a href="#"> إصدارات جرير</a></li>
+                    <li><a href="">قارئ جرير</a></li>
+                    <li><a href="">شركاء برامج المكافئات</a></li>
+                    <li><a href="">خدمات شركات الإتصالات</a></li>
+        
+                </ul>
+            </div>
+        </div>
+    
+          <div class="footer-items">
+            <div class="header-text"><h3>  عن جرير   </h3></div>
+            <div class="list-item">
+                <ul>
+                    <li><a href="#"> من نحن</a></li>
+                    <li><a href=""> الحوكمة</a></li>
+                    <li><a href="">علاقات المستثمرين</a></li>
+                    <li><a href=""> الاستدامة</a></li>
+                    <li><a href=""> الاحبار</a></li>
+                    <li><a href=""><h3>فرص العمل</h3></a></li>
+                </ul>
+            </div>
+        </div>
+    
+        </div>
+       
+    
+    </footer>
+    
+    <div class="buttom">
+        <div class="pyment">
+            <ul>
+                <li><a href=""><img src="images/mada.jpg" alt=""></a></li>
+                <li><a href=""><img src="images/master.png" alt=""></a></li>
+                <li><a href=""><img src="images/qitaf.png" alt=""></a></li>
+                <li><a href=""><img src="images/visa.png" alt=""></a></li>
+                <li><a href=""><img src="images/american-express.png" alt=""></a></li>
+                
+
+            </ul>
+        </div>
+        <div class="copy-right">
+            <ul>
+                <li><a href="#">سياسة الخصوصية</a></li>
+                <li><a href="#"> شروط الخدمة</a></li>
+
+            </ul>
+            <p>جميع الحقوق محفوظة لمكتبة جرير   &copy;2021  </p>
+        </div>
+    </div>
+   <!-- Footer !!-->
+
+<!-- login and resisteration -->
+<div class="modal_container" id="modal">
+    <div class="register_log_modal">
+
+       
+        <span class="close" >&times;</span>
+        <div class="body">
+            <div class="register form">
+                <div class="header">
+                    <h2> إنشاء حساب جديد</h2>
+                </div>
+                <form action="" dir="rtl">
+                    <div class="phone">
+                       
+                        <input class=phon type="text" name="f-name" placeholder="التلفون" required="" >
+                        <select name="" id="">
+                            <option value="">رمز البلد</option>
+                            <option value="">+976</option>
+                            <option value="">+967</option>
+                            <option value="">+965</option>
+                        </select>
+                        
+                    </div>
+                    
+                <input  type="text" name="f-name" placeholder="الاسم الإول" required="" >
+                <input  type="text" name="l-name" placeholder="اسم العائلة" required="" >
+                <input   type="email" name="email" placeholder="الايميل" required="" >
+                <input   type="email" name="confirm-email" placeholder="تأكيد الايميل" required="" >
+                <input   type="password" name="password" placeholder="كلمة السر" required="" >
+                <div class="checkbox">
+                    <div class="check-item">
+                        <input type="checkbox" checked>
+                        <label >ِأوافق على <a href="">الشروط الاحكام</a></label>
+                        
+                    </div>
+                   <div class="check-item">
+                    <input type="checkbox" checked>
+                    <label >ِالتسجيل للانضمام للنشرة البريدية</label>
+              
+                   </div>
+                </div>
+                      <button type="submit" name="register" >إنشاء الحساب </button>
+                
+            </form>
+                <button id="login-btn">تسجيل الدخول</button>
+
+            </div>
+
+            <!-- login form -->
+            <div class="login form" dir="rtl">
+                <div class="header">
+                    <h2> تسجيل الدخول  </h2>
+                </div>
+                <form action="">
+                <input   type="email" name="email" placeholder="البريد الالكتروني أو رقم الجوال" required="" maxlength="25" minlength="4">
+                <input   type="password" name="password" placeholder="كلمة السر" required="" maxlength="25" minlength="4">
+                <button type="submit" name="register" style="background: crimson;color: aliceblue;">تسجيل الدخول</button>
+                </form>
+                <div>
+                    <p>ليس لديك حساب ؟؟</p>
+                    <button id="register-btn"> إنشاء حساب جديد</button>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+</div>
+<!-- login and resisteration -->
+
+
+
+ 
+
+    <!-- script -->
+  <script src="js/main.js"></script>
 </body>
 </html>

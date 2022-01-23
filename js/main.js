@@ -36,6 +36,8 @@ function myFunction() {
 
   });
 
+
+
   // prev
 
   prev.addEventListener('click',()=>{
@@ -52,36 +54,36 @@ function myFunction() {
   });
 
   
-/*  timer */
-setInterval( ()=>{
+// /*  timer */
+// setInterval( ()=>{
 
-  const DueDate = new Date('jan 23,2022 00:00:00').getTime();
-  const currentDate = new Date().getTime();
-  const diff = DueDate - currentDate;
+//   const DueDate = new Date('jan 23,2022 00:00:00').getTime();
+//   const currentDate = new Date().getTime();
+//   const diff = DueDate - currentDate;
 
 
-  let sec = 1000;
-  let min = sec * 60;
-  let hou = min * 60;
-  let day = hou * 24;
+//   let sec = 1000;
+//   let min = sec * 60;
+//   let hou = min * 60;
+//   let day = hou * 24;
 
-  let remainDay = Math.floor(diff/day);
-  let remainHour = Math.floor((diff%day)/hou);
-  let remainMin = Math.floor((diff%hou)/min);
-  let remainSec = Math.floor((diff%min)/sec);
+//   let remainDay = Math.floor(diff/day);
+//   let remainHour = Math.floor((diff%day)/hou);
+//   let remainMin = Math.floor((diff%hou)/min);
+//   let remainSec = Math.floor((diff%min)/sec);
 
-  var d = document.getElementById("days");
-  var h = document.getElementById("hours"); 
-  var m = document.getElementById("minut"); 
-  var s = document.getElementById("second");
+//   var d = document.getElementById("days");
+//   var h = document.getElementById("hours"); 
+//   var m = document.getElementById("minut"); 
+//   var s = document.getElementById("second");
 
   
-  d.innerHTML = remainDay;
-  h.innerHTML = remainHour;
-  m.innerHTML = remainMin;
-  s.innerHTML = remainSec;
+//   d.innerHTML = remainDay;
+//   h.innerHTML = remainHour;
+//   m.innerHTML = remainMin;
+//   s.innerHTML = remainSec;
 
-},1000);
+// },1000);
 
 
 
@@ -104,6 +106,7 @@ loginBtn.addEventListener('click', openlogin);
 registBtn.addEventListener('click', openRegist);
 
 closeBtn.addEventListener('click', closModal);
+modal.addEventListener('click',closModal);
 
 
 //Method
@@ -118,9 +121,6 @@ function openModal() {
 function openlogin(){
   login.style.display = "block";  
   regis.style.display = "none";
-  
-
-
 }
 
 //open rigist form
@@ -133,4 +133,52 @@ function openRegist(){
 // Close
 function closModal() {
  modal.style.display = 'none';
+}
+
+
+// product slider2
+
+let buttonRight = document.getElementById('slide-right');
+let buttonLeft = document.getElementById('slide-left');
+
+let slider = document.getElementById('container-book');
+
+
+buttonLeft.addEventListener('click', function(){
+    slider.scrollLeft -= 265;
+})
+
+buttonRight.addEventListener('click', function(){
+    slider.scrollLeft += 265;
+})
+
+// details slider
+
+var slideIndex = 1;
+showSlides(slideIndex);
+
+// Next/previous controls
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+// Thumbnail image controls
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
 }
