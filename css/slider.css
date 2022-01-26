@@ -6,91 +6,41 @@
 header  .slider-container{
     position: relative;
     max-width: 1300px;
-    height: 80vh;
-    display: flex;
-    overflow: hidden;
+    margin: auto;
 }
-header .slider-container .slider{
+header .slider-container .mySlides{
     width: 100%;
     height: 100%;
     position: relative;
-    animation: move-Slider 10s ease-in-out 3s 1 ;
 }
+.mySlides {display: none}
+img {vertical-align: middle;}
 
-header .slider-container .slider img{
-    position: absolute;
-    width: 100%;
-     height: 100%;
-    top: 0;
-    left: -100%;
-    animation-duration: 0.5s;
-    animation-timing-function: ease-in;
-    animation-fill-mode: forwards;
-}
 
-header .slider-container .slider img:first-of-type{
 
-    left: 0%;
-
-}
  header .slider-container .next{
-    right: 1%;
+    left: 0%;
 }
 header .slider-container .prev{
-    left: 1%;
+    right: 0%;
 }
 header .slider-container .next:hover ,.prev:hover{
   font-size: 2.5rem;
   font-weight: bolder;
 } 
 
-/* animation */
-
-@keyframes firstNext{
-    0%{
-        left: 0%;
-    }
-    100%{
-        left: 100%;
-    }
-}
-
-@keyframes second{
-    0%{
-        left: -100%;
-    }
-    100%{
-        left: 0%;
-    }
-}
-
-@keyframes firstPrev{
-    0%{
-        left: 0%;
-    }
-    100%{
-        left: -100%;
-    }
-}
-
-@keyframes secondPrev{
-    0%{
-        left: 100%;
-    }
-    100%{
-        left: 0%;
-    }
-}
-
-@keyframes move-Slider{
-    0%{
-        left: 0%;
-    }
-    100%{
-        left: 100%;
-    }
-}
-
+.dot {
+    cursor: pointer;
+    height: 20px;
+    width: 20px;
+    margin: 0 2px;
+    background-color: #bbb;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+  .active, .dot:hover {
+    background-color: #717171;
+  }
 /* Next & previous buttons */
 .prev, .next {
     cursor: pointer;

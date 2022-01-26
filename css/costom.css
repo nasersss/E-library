@@ -113,3 +113,11 @@ ul{
 .border-b{
     border-bottom: 1px solid var(--light-gray)
 }
+
+.bodyEN{
+    direction: ltr;
+    text-align: left;
+}
+.bodyAR{
+    direction: rtl;
+}

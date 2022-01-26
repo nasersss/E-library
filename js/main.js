@@ -83,3 +83,28 @@ window.onclick = function(event) {
 // **********
 // pyment step
 // **********
+
+
+// Change language
+
+let lang = document.getElementById('lang');
+let body = document.getElementById('body');
+
+lang.addEventListener('click',function(){
+
+ let langstyle=body.getAttribute('class');
+ 
+
+  if(langstyle=='bodyAR')
+          {
+           body.classList.remove("bodyAR");
+          body.classList.add("bodyEN");
+          lang.innerHTML=`<span><i class="fas fa-language"></i> </span> عربي`;
+        }
+  else{
+      body.classList.add("bodyAR");
+      body.classList.remove("bodyEN");
+      lang.innerHTML=`<span><i class="fas fa-language"></i> </span> English`;
+    }
+  
+});
