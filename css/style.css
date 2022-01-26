@@ -1,103 +1,7 @@
-:root {
-    --main-bg-color: coral;
-    --custom1:rgb(117, 10, 10);
-    --custom2:rgb(247, 176, 25);  
-    --custom3:rgb(142, 40, 226);
-    --custom4:rgba(240, 44, 214, 0.89);
-    --custom5:rgb(25, 144, 223);
-    --custom6:rgb(52, 165, 42);
-    --custom7:rgb(184, 10, 97);
-    --gray:  #58606b;
-    --dark-gry:#42526e;
-    --light-gray:#e2e7ee;
-    --red:#e9022e;
-    --dark-red:#d4070e;
-    --blue:#1595eb;
-    --black:#2f3444;
-  }
-  .costo1{
-    color: var(--custom1);
-    background-color: var(--custom1);
-}
-.costo2{
-    color: var(--custom2);
-    background-color: var(--custom2);
-}
-.costo3{
-    color: var(--custom3);
-    background-color: var(--custom3);
-}
-.costo4{
-    color: var(--custom4);
-    background-color: var(--custom4);
-}
-.costo5{
-    color: var(--custom5);
-    background-color: var(--custom5);
-}
-.costo6{
-    color: var(--custom6);
-    background-color: var(--custom6);
-}
-.costo7{
-    color: var(--custom7);
-    background-color: var(--custom7);
-}
-.black{
-    color:var(--black)
-}
-.blue-c{
-    color: var(--blue);
-}
-.red-c{
-    color: var(--red);
-}
-.d-gray-c{
-    color:var(--dark-gry)
-}
-.l-gray-c{
-    color:var(--light-gray)
-}
-.best{
-    color:rgb(255, 153, 0) !important;
-}
-/* font */
-.bold{
-    font-weight: bold;
-}
-.larg
-{
-    font-size: 1.5rem ;
-}
-.small{
-    font-size: 0.6rem;
-}
-button{
-    cursor:pointer;
-}
-.shopping{
-    cursor: pointer;
-}
-.red {
-    font-size: 17px;
-    font-weight: 800;
-    color: var(--red)
-}
-.green{
-    color: rgb(126, 179, 46);
-}
-*{
-    font-family:Arial, Helvetica, sans-serif;
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-}
-ul{
-    list-style: none;
-}
+
 a{
     text-decoration: none;
-    color: #fff;
+    color: var(--blue);
 }
 .container{
     margin-left: auto;
@@ -220,70 +124,82 @@ header .box-search .crad{
 /* modal_container */
 
 .modal_container{
-    background: #ccc;
-    position: absolute;
+    position: fixed;
     top:0%;
-    width: 100vw;
+    width: 100%;
+    height: 100vh;
     justify-content: center;
     align-items: center;
-    background: rgba(0, 0, 0, 0.5);
+    background: rgba(0, 0, 0, 0.771);
     display: none;
-    z-index: 1000;
     color:rgb(150, 144, 144);
+    z-index: 100;
 }
-.modal_container span{
-    font-size:50px;
-    color: rgb(236, 44, 44);
-}
-.modal_container span:hover{
-    font-size: 60px;
-    font-weight: bold;
-    color: crimson;
-    cursor: pointer;
-}
-.modal_container .register_log_modal{
+.modal_container .register_log_modal,.pymentStep{
+    position: relative;
     background: #fff;
     width: 50vw;
+    height: 100vh;
     padding: 10px 20px;
     margin-left: auto;
     margin-right: auto;
+    border: 1px solid var(--dark-red);
 }
-@media (max-width:991px){
-    .modal_container .register_log_modal{
-    width: 90vw;
-    }
+
+.modal_container span{
+    position: absolute;
+    font-size:50px;
+    color: var(--dark-red);
+    top: 0;
 }
+
+.modal_container span:hover{
+    font-size: 60px;
+    font-weight: bold;
+    color: var(--dark-red);
+    cursor: pointer;
+}
+
 .modal_container .body .header{
     border-bottom: 1px solid rgb(145, 143, 143);
     width: 100%;
-    padding-bottom: 20px   
+    padding-bottom: 10px   
 }
 .modal_container .body .header h2{
+    color: var(--black);
     text-align: center;
 }
-.modal_container #login-btn,#register-btn{
-   width: 100%;
-   padding: 10px;   
-   cursor: pointer;
+.modal_container p{
+    text-align: right;
+
 }
-.modal_container .body{
-    padding: 10px;
+
+@media (max-width:991px){
+    .modal_container .register_log_modal,.pymentStep{
+    width: 80vw;
+    
+    }
 }
-.modal_container .body form{
-    padding: 20px;
+
+@media (max-width:667px){
+    .modal_container .register_log_modal,.pymentStep{
+    width: 100vw;
+    
+    }
+}
+.modal_container .body form,.body-pyment form{
+    padding: 20px 10% 20px 10%;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    align-items: right;
 }
-.modal_container p{
-    font-size: 20px;
-    text-align: center;
-}
+
 .modal_container .body form input{
     width: 100%;
 }
-.modal_container .body form input,select{
+.modal_container .body form input,select
+,.body-pyment form input,select{
     margin: 5px 0;
     padding: 10px;
     border: 1px solid #ccc;
@@ -291,7 +207,7 @@ header .box-search .crad{
     font-size: 15px;
     transition: 0.3s border-color ease; 
     outline: none;
-    background: #9ca6b4;
+    background: #eff2f7;;
     border-radius: 5px;
    
 }
@@ -321,26 +237,59 @@ header .box-search .crad{
     padding: 10px 20px;
     margin: 5px 0;
     border: none;
-    font-weight: 700;
     font-size: 20px;
-    color: #35537d;
-    background-color: #fff;
+    color: var(--dark-gry);
+    background-color: #e5e9f4;
     border: 1px solid #fdeeed;
-    box-shadow: 0 5px 5px  rgba(0, 0, 0, 0.5);
     transition-duration: .5s;
     border-radius: 5px;  
+}
+
+.modal_container 
+.register_log_modal .login p,.btn p{
+text-align: center;
+}
+.modal_container 
+.register_log_modal 
+.btn p b{
+
+    color: var(--blue);
+    cursor: pointer;
+
+}
+.modal_container .login button{
+    width: 50%;
+}
+
+.modal_container .login form button{
+    width: 100%;
+    color: #fff;
+    background: var(--dark-red);
+}
+
+.modal_container button:hover,
+ .body form button:hover{
+ background: var(--light-gray);
+ color: var(--dark-red);
 }
 
 .modal_container .login{
     display: none;
 }
+
+.modal_container .login>div button{
+    display: block;
+    margin: auto;
+}
+
+
 .modal_container .login a{
     color: rgb(21, 113, 218) !important;
 }
 
-
+/* ************ */
 /* checkout  */
-
+/* ************* */
 
 .checkout-container{
     width: 90%;
@@ -510,6 +459,76 @@ header .box-search .crad{
 }
 
 
+/* ****************** */
+/* pyment step Modal */
+/* ***************** */
+.pymentStep{
+    position: relative;
+}
+
+.pymentStep .body-pyment{
+padding-top: 40px;
+}
+
+.pymentStep .body-pyment #phon {
+width: 78% !important;
+}
+
+.pymentStep .numberOperation{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-color: var(--light-gray);  
+}
+
+.pymentStep button{
+width: 40%;
+}
+
+#operationName{
+    text-align: center;
+    
+}
+
+.progressOperation {
+    display: flex;
+    height: 20vh;
+   
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.circl{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    border: 3px solid rgba(221, 88, 88, 0.8);
+    border-radius: 50%;
+    background:rgba(128, 121, 121, 0.8);
+    z-index: 110;
+  
+}
+
+.btn{
+    justify-content: space-around;
+}
+button{
+    height: 40px;
+    width: 100px;
+    font-size: 20px;
+}
+.active{
+    background: darkgreen;
+}
+
+
+
 /* ********* */
 /* Main section Home */
 /* ******************** */
@@ -666,8 +685,10 @@ justify-content: space-evenly;
 .body-deta  .foot p{
     text-align: left;
 }
+
 /* ********* */
 /* add to cart in details page */
+/* ************ */
  .add-cart .first-div,.second-div{
     padding:  40px  20px 20px 20px;
     box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.5);
@@ -1005,44 +1026,42 @@ color: var(--dark-red);
     border-radius: 50%;
     text-align: center;
 }
-.container-book .items{
-    margin-top: 20px;
-    width: 300px;
-    border-radius: 5px;
-    border: 1px solid #ccc;
-    padding:  0 10px;
-}
-.section .container-book .items{
-    width:250px;
-}
+.section1{
 
-.img-product .container-book .items{
-    width: 205px !important;
-    padding-bottom: 10px;
-   
-}
-   .img-product .container-book .items img{
-   width: 100%;
-  
-}
-.img-product .container-book
- .items .img{
-    margin: 0 15%;
-}
-.img-product .container-book
- .items img{
+    position: relative;
     
-    height: 180px;
-    object-fit: cover;
-}
-.img-product .container-book
- .items .text{
-    height: 100px;
-}
- .result .container-book .items{
-    width:250px;
-}
-
+    }
+    .section-container{
+        display: flex !important;
+        flex-wrap: nowrap !important;
+        overflow-x: auto;
+        overflow: hidden;
+        padding-right: 0px;
+        justify-content: right;
+        margin: 0px;
+    }
+    
+    .section-container .items{
+        width: 250px;
+        flex: 0 0 auto;
+        object-fit: cover;
+         margin: 5px;
+        border: 1px solid var(--dark-gry);
+        overflow: hidden;
+        transform: scale(.95);
+        transition: all .3s;
+    }
+    
+        @media(max-width:667px){
+          
+            .section-container{
+                justify-content: right;
+                align-items: center;
+                padding: 0 50px;
+            }
+           
+        }
+      
 
 /* ******* */
 /*Footer*/
@@ -1171,42 +1190,7 @@ line-height: 50px;
     width: 50%;
 }
 /* Footer !!! */
- .section1{
-
-position: relative;
-
-}
-.section-container{
-    display: flex !important;
-    flex-wrap: nowrap !important;
-    overflow-x: auto;
-    overflow: hidden;
-    padding-right: 0px;
-    justify-content: right;
-    margin: 0px;
-}
-
-.section-container .items{
-    width: 250px;
-    flex: 0 0 auto;
-    object-fit: cover;
-     margin: 5px;
-    border: 1px solid var(--dark-gry);
-    overflow: hidden;
-    transform: scale(.95);
-    transition: all .3s;
-}
-
-    @media(max-width:667px){
-      
-        .section-container{
-            justify-content: right;
-            align-items: center;
-            padding: 0 50px;
-        }
-       
-    }
-  
+ 
 /* ********* */
 /* Timer */
 /* ********* */
@@ -1221,7 +1205,7 @@ position: relative;
     align-items: center;
     flex-wrap: wrap;
     color:rgb(255, 251, 251);
-    z-index: 1000;
+    z-index: 100;
     columns: #fff;
     background: rgb(172, 2, 2);
     justify-content: space-evenly;
@@ -1232,11 +1216,14 @@ position: relative;
     min-height: 54px;
     border-radius: 9px;
     background: #fff;
-    color:var(--blue) !important;
+    color:var(--black) !important;
     line-height: 54px;
+    text-align: center;
+    font-size: 1.2rem;
 }
 .timer .text-timer{
     font-size: 1.25rem;
+    text-align: center;
 }
 .timer>p{
     font-size: 40px;
@@ -1261,4 +1248,11 @@ position: relative;
 
         background: rgb(63, 1, 1);
     }
+}
+.step{
+    width:100%;
+    height: 20px;
+    background: tomato;
+    margin-bottom: 5px;
+    display: none;
 }

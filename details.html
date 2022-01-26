@@ -15,6 +15,7 @@
         
 
     <!-- style -->
+    <link rel="stylesheet" href="css/costom.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/slider.css">
     <link rel="stylesheet" href="css/media.css">
@@ -36,7 +37,7 @@
                 </div>
             </div>
             <ul id="nav-bar-list">
-                <li style="border-right: none;" id="modal-btn"> <a href="#" > <span><i class="fas fa-user"></i></span> ادخل لحسابك أو سجل الآن</a></li>
+                <li style="border-right: none;" onclick="openModal()"> <a href="#" > <span><i class="fas fa-user"></i></span> ادخل لحسابك أو سجل الآن</a></li>
                 <li><a href="#"><span><i class="fas fa-star"></i></span> المفضلة</a></li>
                 <li><a href="#"><span><i class="fas fa-truck-moving"></i></span> تتبع الشحنة</a></li>
                 <li><a href="#"><span><i class="fas fa-cogs"></i></span> طلبات الصيانة</a></li>
@@ -687,7 +688,7 @@
                 <form action="">
                 <input   type="email" name="email" placeholder="البريد الالكتروني أو رقم الجوال" required="" maxlength="25" minlength="4">
                 <input   type="password" name="password" placeholder="كلمة السر" required="" maxlength="25" minlength="4">
-                <button type="submit" name="register" style="background: crimson;color: aliceblue;">تسجيل الدخول</button>
+                <button type="submit" name="register" >تسجيل الدخول</button>
                 </form>
                 <div>
                     <p>ليس لديك حساب ؟؟</p>
@@ -706,6 +707,9 @@
  
 
     <!-- script -->
-  <script src="js/main.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/slider.js"></script>
+    <script src="js/productSlider.js"></script>
+
 </body>
 </html>

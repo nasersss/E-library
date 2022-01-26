@@ -15,6 +15,7 @@
         
 
     <!-- style -->
+    <link rel="stylesheet" href="css/costom.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/media.css">
 
@@ -24,7 +25,7 @@
 <body dir="rtl">
 
     <!-- checkout  -->
-    
+
     <div class="checkout-container">
                 <div class="heaader-checkout">
                     <h3><i class="fas fa-shopping-cart"></i> السلة </h3>
@@ -144,14 +145,161 @@
                     </div>
                     <div class="footer">
                         <p>بالضغط على إنهاء التسوق أنت توافق على <a href="#">الشروط ولأحكام  </a> و <a href="#">سياية الخصوصية</a></p>
-                        <button>إنهاء التسجيل</button>
+                        <button onclick="openModal() ">إنهاء التسجيل</button>
                     </div>
                 </div>
             </div>
     </div>
 
-    
-    
+    <!-- Modal for enter informaition of pyament  -->
+    <!-- login and resisteration -->
+<div class="modal_container" id="modal">
+        <div class="pymentStep">
+            <span class="close" >&times;</span>
 
+            <div class="header-pyment flex-center">
+                <h2 class="border-b">بيانات الدفع</h2>
+            </div>
+            <!-- personal-Information -->
+
+                <div class="body-pyment">
+                    <div class="personalInfo step">
+                        <div class="titelOperation flex-center">
+                            <h3>المعلومات الشخصية</h3>
+                        </div>
+                        <div class="form">
+                            <form action="" dir="rtl">
+                            <div >
+                       
+                                    <input id="phon" type="text" name="f-name" placeholder="التلفون" required="" >
+                                    <select name="" id="">
+                                        <option value="">رمز البلد</option>
+                                        <option value="">+976</option>
+                                        <option value="">+967</option>
+                                        <option value="">+965</option>
+                                    </select>  
+                         </div>
+                        <input  type="text" name="f-name" placeholder="الاسم الكامل" required="" >
+                        <input   type="email" name="email" placeholder="الايميل" required="" >
+                        <input   type="text" name="address" placeholder="العنوان" required="" >
+                         <input type="text" name="city" placeholder="المدينة">
+                    </form>
+                    </div>
+                    </div>
+    
+                <!-- pyment step -->
+    
+                    <div class="pymentinfo step">
+                        
+                    </div>
+                <!-- confirm step -->
+                    <div class="confirm step">
+    
+                    </div>
+                <!-- don step -->
+                    <div class="done step">
+    
+                    </div>
+                </div>
+            <!-- details step -->
+           
+                <div class="flex-center">
+                    <button id="prve-btn">السابق</button>
+                    <button id="next-btn">التالي</button>
+                   
+                </div>
+               <div class="pyment-footer">
+                    <div class="operation flex-center">
+                        <div class="numberOperation flex-center">
+                            <p id ="operationNumber">0</p>/<p>4</p>
+                        </div>
+                    </div>
+                    <div class="progressOperation">
+                       
+
+                            <div class="circl active ">
+                                <p>1</p>
+                            </div>
+                            <span class="progress"></span>
+                            <div class="circl">
+                                <p>2</p>
+                            </div>
+                            <span class="progress"></span>
+                            <div class="circl">
+                                <p>3</p>
+                            </div>
+                            <span class="progress"></span>
+                            <div class="circl end">
+                                <p>4</p>
+                            </div>
+                      
+                    </div>
+               </div>
+<!-- End modal -->
+        </div>
+    
+</div>
+    <!--  -->
+    <script>
+        const nextBTN = document.querySelector('#next-btn');
+        const privBTN = document.querySelector('#prve-btn');
+        const numberOperation=document.getElementById('operationNumber');
+        const steps = document.querySelectorAll('.circl');
+        const modalstep=document.getElementsByClassName('step');
+
+let index=1;
+nextBTN.addEventListener('click',()=>{
+
+    index++;
+
+    if(index >steps.length){
+        index = steps.length;
+    }
+    else{
+
+        changesteps()
+    }
+
+
+});
+
+privBTN.addEventListener('click',()=>{
+
+    index--;
+
+    if(index<0){
+        index = 0;
+        
+    }
+    else{
+        changesteps();
+       
+       
+    }
+ 
+
+});
+
+
+
+
+function changesteps(){
+steps.forEach((item,i)=>{
+
+if(i<index){
+    item.classList.add('active');
+    numberOperation.innerHTML=i+1;
+    modalstep[i].style.display="block";
+}
+else{
+    item.classList.remove('active'); 
+    modalstep[i+1].style.display="none";
+}
+
+})
+}
+
+    </script>
+    <script src="js/main.js"></script>
 </body>
 </html>
