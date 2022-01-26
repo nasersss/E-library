@@ -1158,6 +1158,9 @@ footer .list-item ul li{
     font-size: 16px;
 }
 
+footer .list-item ul li a{
+    color:#fff;
+}
 /* ****** */
 /* buttom footer */
 /* ****** */
