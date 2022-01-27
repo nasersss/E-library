@@ -471,7 +471,7 @@ padding-top: 40px;
 }
 
 .pymentStep .body-pyment #phon {
-width: 78% !important;
+width: 100% !important;
 }
 
 .pymentStep .numberOperation{
@@ -486,19 +486,44 @@ width: 40%;
 }
 
 #operationName{
-    text-align: center;
-    
+    text-align: center; 
 }
-
+.confirm p{
+    margin: 20px 0;
+    text-align: center;
+    color:var(--black);
+    font-size: 20px;
+}
+.done h4{
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    background: rgb(14, 214, 14);
+    margin: auto;
+    line-height: 100px;
+    color:#000;
+    text-align: center;
+    font-size: 30px;
+}
 .progressOperation {
     display: flex;
-    height: 20vh;
-   
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin-left: auto;
     margin-right: auto;
+}
+.progressOperation .progress{
+    position: relative;
+    width: 25%;
+    height: 5px;
+    background: rgba(128, 121, 121, 0.8);
+}
+@media (max-width:991px){
+    .progressOperation .progress{
+      
+        width: 30%;
+    }
 }
 
 .circl{
@@ -532,21 +557,29 @@ button{
 /* ********* */
 /* Main section Home */
 /* ******************** */
-
-.main-container .slid-section{
+.main-container{
     position: relative;
+}
+.main-container .slid-section{
     margin: 0 auto;
     display: flex;
     width: 100%;
-    justify-content: space-around;
+    justify-content: space-evenly;
     margin: 10px 0 0 0;
 }
 section{
     margin-top: 20px;
 }
-.main-container h3{
+.main-title{
+    padding: 0 20px;
+}
+.main-container h3,.main-title h3{
     color: var(--custom1);
     margin: 10px;
+}
+.main-title p{
+    color: var(--blue);
+    cursor: pointer;
 }
 @media (max-width:667px){
     .main-container .slid-section{
@@ -930,7 +963,7 @@ line-height: 25px;
        margin-top: 5px;
        width: 100%;
        height: 10px;
-       background-color: rgb(108, 110, 105);
+       background-color: rgb(137, 226, 4);
        
    }
 .filter-container .salary p{
@@ -965,6 +998,7 @@ line-height: 25px;
 }
 .section-container{
     display: flex;
+    
 }
 
  .container-book .items img{
@@ -1033,7 +1067,7 @@ color: var(--dark-red);
     }
     .section-container{
         display: flex !important;
-        flex-wrap: nowrap !important;
+        flex-wrap: nowrap ;
         overflow-x: auto;
         overflow: hidden;
         padding-right: 0px;
@@ -1254,8 +1288,4 @@ line-height: 50px;
 }
 .step{
     width:100%;
-    height: 20px;
-    background: tomato;
-    margin-bottom: 5px;
-    display: none;
 }

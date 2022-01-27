@@ -22,7 +22,7 @@
     <link rel="stylesheet" href="css/media.css">
 
 </head>
-<body dir="rtl">
+<body dir="rtl"id="body" class="bodyAR">
     
     <!-- Header -->
     <header>
@@ -45,7 +45,7 @@
                 <li><a href="#"><span><i class="fas fa-info-circle"></i></span> المساعدة</a></li>
                 <li><a href="#"> <span><i class="fas fa-map-marker-alt"></i></span> فروعنا</a></li>
                 <li><a href="#"><span></span> اليمن</a></li>
-                <li><a href="#"><span><i class="fas fa-language"></i> </span> Eenglish</a></li>
+                <li><a href="#" id="lang"><span><i class="fas fa-language"></i> </span>English</a></li>
             </ul>
         </nav>
     <!-- Header !!-->
@@ -88,18 +88,20 @@
             <p class="text-timer">ثانية </p>
         </div>
     </div>
-    <div class="slider-container container">
-        <!-- arrow -->
-        <span class="next" >&#10094;</span>
-        <span class="prev" >&#10095;</span>
-        <!-- slider -->
-        <div class="slider">
-            <img src="slider/1.png" alt="sllider1">
-            <img src="slider/2.jpg" alt="sllider2">
-            <img src="slider/3.jpg" alt="sllider3">
-            <img src="slider/4.jpg" alt="sllider3">
-        </div>
+    <div class="slider-container">
 
+        <img class="mySlides" src="slider/1.png" style="width:100%">
+        <img class="mySlides"  src="slider/2.jpg" style="width:100%">
+        <img class="mySlides"  src="slider/3.jpg" style="width:100%">
+        
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>    
+</div>
+    
+    <div class="flex-center p-10">
+      <span class="dot" onclick="currentSlide(1)"></span> 
+      <span class="dot" onclick="currentSlide(2)"></span> 
+      <span class="dot" onclick="currentSlide(3)"></span> 
     </div>
 </header>
     <!-- Header !!!-->

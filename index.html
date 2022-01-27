@@ -61,7 +61,7 @@
         </div>
 
         <div class="crad">
-            <p><i class="fas fa-shopping-cart"></i></p>
+            <a href="checkout.html" target="_blank"><i class="fas fa-shopping-cart"></i></a>
         </div>
     </div>
    
@@ -117,9 +117,9 @@
                     <h3>تصفح حسب القسم</h3>
                 </div>
                 <div class="slid-section" id="slider1">
-                         <!-- arrow -->
-                    <a class="prev" id="slide1-left">&#10094;</a>
-                    <a class="next"id="slide1-right" >&#10095;</a>
+                              <!-- arrow -->
+                    <a class="prev" id="slide-left" onclick="leftScrol(0)">&#10094;</a>
+                    <a class="next"id="slide-right" onclick="rightScrol(0)">&#10095;</a>
                 <!-- arrow -->
                      <!-- items -->
                      <div class="item">
@@ -200,7 +200,8 @@
                             </div>
                         </div>
                     </div>
-                    <!-- items!!! --> <!-- items -->
+                    <!-- items!!! -->
+                     <!-- items -->
                      <div class="item">
                         <div class="icon">
                             <span class="costo7"><i class="fas fa-star "></i>
@@ -214,6 +215,8 @@
                         </div>
                     </div>
                     <!-- items!!! -->
+                   
+                    
                 </div>
             </div>
         </div>
@@ -238,13 +241,14 @@
         <!-- All books  container-->
                 <!-- section 1 -->
         <section class="section">
-            <div class="main-title">
-                <h3> العروض الحالية </h3>
+            <div class="main-title flex-between">
+                <h3> العروض الحالية</h3>
+                <p onclick="viewAll(1)">عرض الكل</p>
             </div>
-            <div class="container-book section-container" id="container-book">
+            <div class="slid-section container-book section-container">
                 <!-- arrow -->
-                    <a class="prev" id="slide-left">&#10094;</a>
-                    <a class="next"id="slide-right" >&#10095;</a>
+                    <a class="prev" id="slide-left" onclick="leftScrol(1)">&#10094;</a>
+                    <a class="next"id="slide-right" onclick="rightScrol(1)">&#10095;</a>
                 <!-- arrow -->
 
                     <!-- item1 -->
@@ -477,7 +481,1441 @@
 
 <!-- section 1 -->
         </section>
-       
+        <!-- section 2 -->
+        <section class="section">
+            <div class="main-title flex-between">
+                <h3>الكتب الدينية</h3>
+                <p>عرض الكل</p>
+            </div>
+            <div class="slid-section container-book section-container">
+                <!-- arrow -->
+                <a class="prev" id="slide-left" onclick="leftScrol(2)">&#10094;</a>
+                <a class="next"id="slide-right" onclick="rightScrol(2)">&#10095;</a>
+                 <!-- arrow -->
+
+                    <!-- item1 -->
+                    <div class="items">
+                    <div class="img">
+                            <img src="images/book/book10.png" alt="">
+                    </div>
+                    <div class="text">
+                        <h6 class="title"> <span><i class="fas fa-book-open"></i></span> كتاب إلكتروني</h6>
+                        <p class="star">
+                            <i class="fas fa-star best"></i>
+                            <i class="fas fa-star best "></i>
+                            <i class="fas fa-star best "></i>
+                            <i class="fas fa-star best "></i>
+                            <i class="fas fa-star"></i>
+                        </p>
+                        <p class="name-book">لأنك الله  <span>(كتاب الكتروني)</span></p>
+                    </div>
+                    <div class="footer-item">
+                        <h6>99.99 <small>رس</small></h6>
+                        <p><small>شامل الضريبة</small></p>
+                        <p>صيغ أخري : <b>كتاب مطبوع</b></p>
+                        <div class="icon">
+                            <p><i class="fas fa-star"></i></p>
+                            <p class="shopping"><i class="fas fa-cart-plus"></i></p>
+                            <p><i class="fas fa-exchange-alt"></i></p>
+                        </div>
+                    </div>
+                    </div>
+                    <!-- item1 -->
+                    
+                    <!-- item1 -->
+                    <div class="items">
+                    <div class="img">
+                            <img src="images/book/book3.jpg" alt="">
+                    </div>
+                    <div class="text">
+                        <h6 class="title"> <span><i class="fas fa-book-open"></i></span> كتاب إلكتروني</h6>
+                        <p class="star">
+                            <i class="fas fa-star best"></i>
+                            <i class="fas fa-star best "></i>
+                            <i class="fas fa-star best "></i>
+                            <i class="fas fa-star best "></i>
+                            <i class="fas fa-star"></i>
+                        </p>
+                        <p class="name-book">لأنك الله  <span>(كتاب الكتروني)</span></p>
+                    </div>
+                    <div class="footer-item">
+                        <h6>99.99 <small>رس</small></h6>
+                        <p><small>شامل الضريبة</small></p>
+                        <p>صيغ أخري : <b>كتاب مطبوع</b></p>
+                        <div class="icon">
+                            <p><i class="fas fa-star"></i></p>
+                            <p class="shopping"><i class="fas fa-cart-plus"></i></p>
+                            <p><i class="fas fa-exchange-alt"></i></p>
+                        </div>
+                    </div>
+                    </div>
+                    <!-- item1 -->
+                                <!-- item1 -->
+                    <div class="items">
+                    <div class="img">
+                            <img src="images/book/book4.png" alt="">
+                    </div>
+                    <div class="text">
+                        <h6 class="title"> <span><i class="fas fa-book-open"></i></span> كتاب إلكتروني</h6>
+                        <p class="star">
+                            <i class="fas fa-star best"></i>
+                            <i class="fas fa-star best "></i>
+                            <i class="fas fa-star best "></i>
+                            <i class="fas fa-star best "></i>
+                            <i class="fas fa-star"></i>
+                        </p>
+                        <p class="name-book">لأنك الله  <span>(كتاب الكتروني)</span></p>
+                    </div>
+                    <div class="footer-item">
+                        <h6>99.99 <small>رس</small></h6>
+                        <p><small>شامل الضريبة</small></p>
+                        <p>صيغ أخري : <b>كتاب مطبوع</b></p>
+                        <div class="icon">
+                            <p><i class="fas fa-star"></i></p>
+                            <p class="shopping"><i class="fas fa-cart-plus"></i></p>
+                            <p><i class="fas fa-exchange-alt"></i></p>
+                        </div>
+                    </div>
+                    </div>
+                    <!-- item1 -->
+                    
+                    <!-- item1 -->
+                    <div class="items">
+                    <div class="img">
+                            <img src="images/book/book1.jpg" alt="">
+                    </div>
+                    <div class="text">
+                        <h6 class="title"> <span><i class="fas fa-book-open"></i></span> كتاب إلكتروني</h6>
+                        <p class="star">
+                            <i class="fas fa-star best"></i>
+                            <i class="fas fa-star best "></i>
+                            <i class="fas fa-star best "></i>
+                            <i class="fas fa-star best "></i>
+                            <i class="fas fa-star"></i>
+                        </p>
+                        <p class="name-book">لأنك الله  <span>(كتاب الكتروني)</span></p>
+                    </div>
+                    <div class="footer-item">
+                        <h6>99.99 <small>رس</small></h6>
+                        <p><small>شامل الضريبة</small></p>
+                        <p>صيغ أخري : <b>كتاب مطبوع</b></p>
+                        <div class="icon">
+                            <p><i class="fas fa-star"></i></p>
+                            <p class="shopping"><i class="fas fa-cart-plus"></i></p>
+                            <p><i class="fas fa-exchange-alt"></i></p>
+                        </div>
+                    </div>
+                    </div>
+                    <!-- item1 -->
+                                
+                    <!-- item1 -->
+                    <div class="items">
+                    <div class="img">
+                            <img src="images/book/book1.jpg" alt="">
+                    </div>
+                    <div class="text">
+                        <h6 class="title"> <span><i class="fas fa-book-open"></i></span> كتاب إلكتروني</h6>
+                        <p class="star">
+                            <i class="fas fa-star best"></i>
+                            <i class="fas fa-star best "></i>
+                            <i class="fas fa-star best "></i>
+                            <i class="fas fa-star best "></i>
+                            <i class="fas fa-star"></i>
+                        </p>
+                        <p class="name-book">لأنك الله  <span>(كتاب الكتروني)</span></p>
+                    </div>
+                    <div class="footer-item">
+                        <h6>99.99 <small>رس</small></h6>
+                        <p><small>شامل الضريبة</small></p>
+                        <p>صيغ أخري : <b>كتاب مطبوع</b></p>
+                        <div class="icon">
+                            <p><i class="fas fa-star"></i></p>
+                            <p class="shopping"><i class="fas fa-cart-plus"></i></p>
+                            <p><i class="fas fa-exchange-alt"></i></p>
+                        </div>
+                    </div>
+                    </div>
+                    <!-- item1 -->
+                    <!-- item1 -->
+
+                    <div class="items">
+                    <div class="img">
+                            <img src="images/book/book2.jpg" alt="">
+                    </div>
+                    <div class="text">
+                        <h6 class="title"><span ><i class="fas fa-book-open"></i></span>  كتاب ورقي </h6>
+                        <!-- star -->
+                        <p class="star">
+
+                        </p>
+                        <p class="name-book"> إحياء علوم الدين <span>(كتاب ورقي)</span></p>
+                    </div>
+                    <div class="footer-item">
+                        <h6>99.99 <small>رس</small></h6>
+                        <p><small>شامل الضريبة</small></p>
+                        <p>صيغ أخري : <b>كتاب مطبوع</b></p>
+                        <div class="icon">
+                            <p><i class="fas fa-star"></i></p>
+                            <p class="shopping"><i class="fas fa-cart-plus"></i></p>
+                            <p><i class="fas fa-exchange-alt"></i></p>
+                        </div>
+                    </div>
+                    </div>
+                    <!-- item1 -->
+                    <!-- item1 -->
+
+                    <div class="items">
+                        <div class="img">
+                                <img src="images/book/book3.jpg" alt="">
+                        </div>
+                        <div class="text">
+                            <h6 class="title"><span><i class="fas fa-book-open"></i></span>  كتاب إلكتروني</h6>
+                            <p class="star">
+                                <i class="fas fa-star best"></i>
+                                <i class="fas fa-star best"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </p>
+                            <p class="name-book" >Smart Reading<span>(كتاب الكتروني)</span></p>
+                        </div>
+                        <div class="footer-item">
+                            <h6>99.99 <small>رس</small></h6>
+                            <p><small>شامل الضريبة</small></p>
+                            <p>صيغ أخري : <b>كتاب مطبوع</b></p>
+                            <div class="icon">
+                                <p><i class="fas fa-star"></i></p>
+                                <p class="shopping"><i class="fas fa-cart-plus"></i></p>
+                                <p><i class="fas fa-exchange-alt"></i></p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- item1 -->   
+                    <!-- item1 -->
+
+                    <div class="items">
+                        <div class="img">
+                                <img src="images/book/book4.png" alt="">
+                        </div>
+                        <div class="text">
+                            <h6 class="title"> <span><i class="fas fa-book-open"></i></span> كتاب ورقي</h6>
+                            <p class="star">
+                                <i class="fas fa-star best"></i>
+                                <i class="fas fa-star best"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </p>
+                            <p class="name-book" >التفكير السليم<span>(كتاب ورقي)</span></p>
+                        </div>
+                        <div class="footer-item">
+                            <h6>99.99 <small>رس</small></h6>
+                            <p><small>شامل الضريبة</small></p>
+                            <p>صيغ أخري : <b>كتاب مطبوع</b></p>
+                            <div class="icon">
+                                <p><i class="fas fa-star"></i></p>
+                                <p class="shopping"><i class="fas fa-cart-plus"></i></p>
+                                <p><i class="fas fa-exchange-alt"></i></p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- item1 -->  
+        </section>
+        <!-- section 3 -->
+        <section class="section">
+            <div class="main-title flex-between">
+                <h3>الكتب التاريخية</h3>
+                <p>عرض الكل</p>
+            </div>
+            <div class="slid-section container-book section-container">
+                <!-- arrow -->
+                <a class="prev" id="slide-left" onclick="leftScrol(3)">&#10094;</a>
+                <a class="next"id="slide-right" onclick="rightScrol(3)">&#10095;</a> <!-- arrow -->
+
+                    <!-- item1 -->
+                    <div class="items">
+                    <div class="img">
+                            <img src="images/book/book10.png" alt="">
+                    </div>
+                    <div class="text">
+                        <h6 class="title"> <span><i class="fas fa-book-open"></i></span> كتاب إلكتروني</h6>
+                        <p class="star">
+                            <i class="fas fa-star best"></i>
+                            <i class="fas fa-star best "></i>
+                            <i class="fas fa-star best "></i>
+                            <i class="fas fa-star best "></i>
+                            <i class="fas fa-star"></i>
+                        </p>
+                        <p class="name-book">لأنك الله  <span>(كتاب الكتروني)</span></p>
+                    </div>
+                    <div class="footer-item">
+                        <h6>99.99 <small>رس</small></h6>
+                        <p><small>شامل الضريبة</small></p>
+                        <p>صيغ أخري : <b>كتاب مطبوع</b></p>
+                        <div class="icon">
+                            <p><i class="fas fa-star"></i></p>
+                            <p class="shopping"><i class="fas fa-cart-plus"></i></p>
+                            <p><i class="fas fa-exchange-alt"></i></p>
+                        </div>
+                    </div>
+                    </div>
+                    <!-- item1 -->
+                    
+                    <!-- item1 -->
+                    <div class="items">
+                    <div class="img">
+                            <img src="images/book/book3.jpg" alt="">
+                    </div>
+                    <div class="text">
+                        <h6 class="title"> <span><i class="fas fa-book-open"></i></span> كتاب إلكتروني</h6>
+                        <p class="star">
+                            <i class="fas fa-star best"></i>
+                            <i class="fas fa-star best "></i>
+                            <i class="fas fa-star best "></i>
+                            <i class="fas fa-star best "></i>
+                            <i class="fas fa-star"></i>
+                        </p>
+                        <p class="name-book">لأنك الله  <span>(كتاب الكتروني)</span></p>
+                    </div>
+                    <div class="footer-item">
+                        <h6>99.99 <small>رس</small></h6>
+                        <p><small>شامل الضريبة</small></p>
+                        <p>صيغ أخري : <b>كتاب مطبوع</b></p>
+                        <div class="icon">
+                            <p><i class="fas fa-star"></i></p>
+                            <p class="shopping"><i class="fas fa-cart-plus"></i></p>
+                            <p><i class="fas fa-exchange-alt"></i></p>
+                        </div>
+                    </div>
+                    </div>
+                    <!-- item1 -->
+                                <!-- item1 -->
+                    <div class="items">
+                    <div class="img">
+                            <img src="images/book/book4.png" alt="">
+                    </div>
+                    <div class="text">
+                        <h6 class="title"> <span><i class="fas fa-book-open"></i></span> كتاب إلكتروني</h6>
+                        <p class="star">
+                            <i class="fas fa-star best"></i>
+                            <i class="fas fa-star best "></i>
+                            <i class="fas fa-star best "></i>
+                            <i class="fas fa-star best "></i>
+                            <i class="fas fa-star"></i>
+                        </p>
+                        <p class="name-book">لأنك الله  <span>(كتاب الكتروني)</span></p>
+                    </div>
+                    <div class="footer-item">
+                        <h6>99.99 <small>رس</small></h6>
+                        <p><small>شامل الضريبة</small></p>
+                        <p>صيغ أخري : <b>كتاب مطبوع</b></p>
+                        <div class="icon">
+                            <p><i class="fas fa-star"></i></p>
+                            <p class="shopping"><i class="fas fa-cart-plus"></i></p>
+                            <p><i class="fas fa-exchange-alt"></i></p>
+                        </div>
+                    </div>
+                    </div>
+                    <!-- item1 -->
+                    
+                    <!-- item1 -->
+                    <div class="items">
+                    <div class="img">
+                            <img src="images/book/book1.jpg" alt="">
+                    </div>
+                    <div class="text">
+                        <h6 class="title"> <span><i class="fas fa-book-open"></i></span> كتاب إلكتروني</h6>
+                        <p class="star">
+                            <i class="fas fa-star best"></i>
+                            <i class="fas fa-star best "></i>
+                            <i class="fas fa-star best "></i>
+                            <i class="fas fa-star best "></i>
+                            <i class="fas fa-star"></i>
+                        </p>
+                        <p class="name-book">لأنك الله  <span>(كتاب الكتروني)</span></p>
+                    </div>
+                    <div class="footer-item">
+                        <h6>99.99 <small>رس</small></h6>
+                        <p><small>شامل الضريبة</small></p>
+                        <p>صيغ أخري : <b>كتاب مطبوع</b></p>
+                        <div class="icon">
+                            <p><i class="fas fa-star"></i></p>
+                            <p class="shopping"><i class="fas fa-cart-plus"></i></p>
+                            <p><i class="fas fa-exchange-alt"></i></p>
+                        </div>
+                    </div>
+                    </div>
+                    <!-- item1 -->
+                                
+                    <!-- item1 -->
+                    <div class="items">
+                    <div class="img">
+                            <img src="images/book/book1.jpg" alt="">
+                    </div>
+                    <div class="text">
+                        <h6 class="title"> <span><i class="fas fa-book-open"></i></span> كتاب إلكتروني</h6>
+                        <p class="star">
+                            <i class="fas fa-star best"></i>
+                            <i class="fas fa-star best "></i>
+                            <i class="fas fa-star best "></i>
+                            <i class="fas fa-star best "></i>
+                            <i class="fas fa-star"></i>
+                        </p>
+                        <p class="name-book">لأنك الله  <span>(كتاب الكتروني)</span></p>
+                    </div>
+                    <div class="footer-item">
+                        <h6>99.99 <small>رس</small></h6>
+                        <p><small>شامل الضريبة</small></p>
+                        <p>صيغ أخري : <b>كتاب مطبوع</b></p>
+                        <div class="icon">
+                            <p><i class="fas fa-star"></i></p>
+                            <p class="shopping"><i class="fas fa-cart-plus"></i></p>
+                            <p><i class="fas fa-exchange-alt"></i></p>
+                        </div>
+                    </div>
+                    </div>
+                    <!-- item1 -->
+                    <!-- item1 -->
+
+                    <div class="items">
+                    <div class="img">
+                            <img src="images/book/book2.jpg" alt="">
+                    </div>
+                    <div class="text">
+                        <h6 class="title"><span ><i class="fas fa-book-open"></i></span>  كتاب ورقي </h6>
+                        <!-- star -->
+                        <p class="star">
+
+                        </p>
+                        <p class="name-book"> إحياء علوم الدين <span>(كتاب ورقي)</span></p>
+                    </div>
+                    <div class="footer-item">
+                        <h6>99.99 <small>رس</small></h6>
+                        <p><small>شامل الضريبة</small></p>
+                        <p>صيغ أخري : <b>كتاب مطبوع</b></p>
+                        <div class="icon">
+                            <p><i class="fas fa-star"></i></p>
+                            <p class="shopping"><i class="fas fa-cart-plus"></i></p>
+                            <p><i class="fas fa-exchange-alt"></i></p>
+                        </div>
+                    </div>
+                    </div>
+                    <!-- item1 -->
+                    <!-- item1 -->
+
+                    <div class="items">
+                        <div class="img">
+                                <img src="images/book/book3.jpg" alt="">
+                        </div>
+                        <div class="text">
+                            <h6 class="title"><span><i class="fas fa-book-open"></i></span>  كتاب إلكتروني</h6>
+                            <p class="star">
+                                <i class="fas fa-star best"></i>
+                                <i class="fas fa-star best"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </p>
+                            <p class="name-book" >Smart Reading<span>(كتاب الكتروني)</span></p>
+                        </div>
+                        <div class="footer-item">
+                            <h6>99.99 <small>رس</small></h6>
+                            <p><small>شامل الضريبة</small></p>
+                            <p>صيغ أخري : <b>كتاب مطبوع</b></p>
+                            <div class="icon">
+                                <p><i class="fas fa-star"></i></p>
+                                <p class="shopping"><i class="fas fa-cart-plus"></i></p>
+                                <p><i class="fas fa-exchange-alt"></i></p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- item1 -->   
+                    <!-- item1 -->
+
+                    <div class="items">
+                        <div class="img">
+                                <img src="images/book/book4.png" alt="">
+                        </div>
+                        <div class="text">
+                            <h6 class="title"> <span><i class="fas fa-book-open"></i></span> كتاب ورقي</h6>
+                            <p class="star">
+                                <i class="fas fa-star best"></i>
+                                <i class="fas fa-star best"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </p>
+                            <p class="name-book" >التفكير السليم<span>(كتاب ورقي)</span></p>
+                        </div>
+                        <div class="footer-item">
+                            <h6>99.99 <small>رس</small></h6>
+                            <p><small>شامل الضريبة</small></p>
+                            <p>صيغ أخري : <b>كتاب مطبوع</b></p>
+                            <div class="icon">
+                                <p><i class="fas fa-star"></i></p>
+                                <p class="shopping"><i class="fas fa-cart-plus"></i></p>
+                                <p><i class="fas fa-exchange-alt"></i></p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- item1 -->  
+        </section>
+        <!-- section 4 -->
+        <section class="section">
+            <div class="main-title flex-between">
+                <h3>السياسية</h3>
+                <p>عرض الكل</p>
+            </div>
+            <div class="slid-section container-book section-container" >
+                <!-- arrow -->
+                <a class="prev" id="slide-left" onclick="leftScrol(3)">&#10094;</a>
+                <a class="next"id="slide-right" onclick="rightScrol(3)">&#10095;</a> <!-- arrow -->
+
+                    <!-- item1 -->
+                    <div class="items">
+                    <div class="img">
+                            <img src="images/book/book10.png" alt="">
+                    </div>
+                    <div class="text">
+                        <h6 class="title"> <span><i class="fas fa-book-open"></i></span> كتاب إلكتروني</h6>
+                        <p class="star">
+                            <i class="fas fa-star best"></i>
+                            <i class="fas fa-star best "></i>
+                            <i class="fas fa-star best "></i>
+                            <i class="fas fa-star best "></i>
+                            <i class="fas fa-star"></i>
+                        </p>
+                        <p class="name-book">لأنك الله  <span>(كتاب الكتروني)</span></p>
+                    </div>
+                    <div class="footer-item">
+                        <h6>99.99 <small>رس</small></h6>
+                        <p><small>شامل الضريبة</small></p>
+                        <p>صيغ أخري : <b>كتاب مطبوع</b></p>
+                        <div class="icon">
+                            <p><i class="fas fa-star"></i></p>
+                            <p class="shopping"><i class="fas fa-cart-plus"></i></p>
+                            <p><i class="fas fa-exchange-alt"></i></p>
+                        </div>
+                    </div>
+                    </div>
+                    <!-- item1 -->
+                    
+                    <!-- item1 -->
+                    <div class="items">
+                    <div class="img">
+                            <img src="images/book/book3.jpg" alt="">
+                    </div>
+                    <div class="text">
+                        <h6 class="title"> <span><i class="fas fa-book-open"></i></span> كتاب إلكتروني</h6>
+                        <p class="star">
+                            <i class="fas fa-star best"></i>
+                            <i class="fas fa-star best "></i>
+                            <i class="fas fa-star best "></i>
+                            <i class="fas fa-star best "></i>
+                            <i class="fas fa-star"></i>
+                        </p>
+                        <p class="name-book">لأنك الله  <span>(كتاب الكتروني)</span></p>
+                    </div>
+                    <div class="footer-item">
+                        <h6>99.99 <small>رس</small></h6>
+                        <p><small>شامل الضريبة</small></p>
+                        <p>صيغ أخري : <b>كتاب مطبوع</b></p>
+                        <div class="icon">
+                            <p><i class="fas fa-star"></i></p>
+                            <p class="shopping"><i class="fas fa-cart-plus"></i></p>
+                            <p><i class="fas fa-exchange-alt"></i></p>
+                        </div>
+                    </div>
+                    </div>
+                    <!-- item1 -->
+                                <!-- item1 -->
+                    <div class="items">
+                    <div class="img">
+                            <img src="images/book/book4.png" alt="">
+                    </div>
+                    <div class="text">
+                        <h6 class="title"> <span><i class="fas fa-book-open"></i></span> كتاب إلكتروني</h6>
+                        <p class="star">
+                            <i class="fas fa-star best"></i>
+                            <i class="fas fa-star best "></i>
+                            <i class="fas fa-star best "></i>
+                            <i class="fas fa-star best "></i>
+                            <i class="fas fa-star"></i>
+                        </p>
+                        <p class="name-book">لأنك الله  <span>(كتاب الكتروني)</span></p>
+                    </div>
+                    <div class="footer-item">
+                        <h6>99.99 <small>رس</small></h6>
+                        <p><small>شامل الضريبة</small></p>
+                        <p>صيغ أخري : <b>كتاب مطبوع</b></p>
+                        <div class="icon">
+                            <p><i class="fas fa-star"></i></p>
+                            <p class="shopping"><i class="fas fa-cart-plus"></i></p>
+                            <p><i class="fas fa-exchange-alt"></i></p>
+                        </div>
+                    </div>
+                    </div>
+                    <!-- item1 -->
+                    
+                    <!-- item1 -->
+                    <div class="items">
+                    <div class="img">
+                            <img src="images/book/book1.jpg" alt="">
+                    </div>
+                    <div class="text">
+                        <h6 class="title"> <span><i class="fas fa-book-open"></i></span> كتاب إلكتروني</h6>
+                        <p class="star">
+                            <i class="fas fa-star best"></i>
+                            <i class="fas fa-star best "></i>
+                            <i class="fas fa-star best "></i>
+                            <i class="fas fa-star best "></i>
+                            <i class="fas fa-star"></i>
+                        </p>
+                        <p class="name-book">لأنك الله  <span>(كتاب الكتروني)</span></p>
+                    </div>
+                    <div class="footer-item">
+                        <h6>99.99 <small>رس</small></h6>
+                        <p><small>شامل الضريبة</small></p>
+                        <p>صيغ أخري : <b>كتاب مطبوع</b></p>
+                        <div class="icon">
+                            <p><i class="fas fa-star"></i></p>
+                            <p class="shopping"><i class="fas fa-cart-plus"></i></p>
+                            <p><i class="fas fa-exchange-alt"></i></p>
+                        </div>
+                    </div>
+                    </div>
+                    <!-- item1 -->
+                                
+                    <!-- item1 -->
+                    <div class="items">
+                    <div class="img">
+                            <img src="images/book/book1.jpg" alt="">
+                    </div>
+                    <div class="text">
+                        <h6 class="title"> <span><i class="fas fa-book-open"></i></span> كتاب إلكتروني</h6>
+                        <p class="star">
+                            <i class="fas fa-star best"></i>
+                            <i class="fas fa-star best "></i>
+                            <i class="fas fa-star best "></i>
+                            <i class="fas fa-star best "></i>
+                            <i class="fas fa-star"></i>
+                        </p>
+                        <p class="name-book">لأنك الله  <span>(كتاب الكتروني)</span></p>
+                    </div>
+                    <div class="footer-item">
+                        <h6>99.99 <small>رس</small></h6>
+                        <p><small>شامل الضريبة</small></p>
+                        <p>صيغ أخري : <b>كتاب مطبوع</b></p>
+                        <div class="icon">
+                            <p><i class="fas fa-star"></i></p>
+                            <p class="shopping"><i class="fas fa-cart-plus"></i></p>
+                            <p><i class="fas fa-exchange-alt"></i></p>
+                        </div>
+                    </div>
+                    </div>
+                    <!-- item1 -->
+                    <!-- item1 -->
+
+                    <div class="items">
+                    <div class="img">
+                            <img src="images/book/book2.jpg" alt="">
+                    </div>
+                    <div class="text">
+                        <h6 class="title"><span ><i class="fas fa-book-open"></i></span>  كتاب ورقي </h6>
+                        <!-- star -->
+                        <p class="star">
+
+                        </p>
+                        <p class="name-book"> إحياء علوم الدين <span>(كتاب ورقي)</span></p>
+                    </div>
+                    <div class="footer-item">
+                        <h6>99.99 <small>رس</small></h6>
+                        <p><small>شامل الضريبة</small></p>
+                        <p>صيغ أخري : <b>كتاب مطبوع</b></p>
+                        <div class="icon">
+                            <p><i class="fas fa-star"></i></p>
+                            <p class="shopping"><i class="fas fa-cart-plus"></i></p>
+                            <p><i class="fas fa-exchange-alt"></i></p>
+                        </div>
+                    </div>
+                    </div>
+                    <!-- item1 -->
+                    <!-- item1 -->
+
+                    <div class="items">
+                        <div class="img">
+                                <img src="images/book/book3.jpg" alt="">
+                        </div>
+                        <div class="text">
+                            <h6 class="title"><span><i class="fas fa-book-open"></i></span>  كتاب إلكتروني</h6>
+                            <p class="star">
+                                <i class="fas fa-star best"></i>
+                                <i class="fas fa-star best"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </p>
+                            <p class="name-book" >Smart Reading<span>(كتاب الكتروني)</span></p>
+                        </div>
+                        <div class="footer-item">
+                            <h6>99.99 <small>رس</small></h6>
+                            <p><small>شامل الضريبة</small></p>
+                            <p>صيغ أخري : <b>كتاب مطبوع</b></p>
+                            <div class="icon">
+                                <p><i class="fas fa-star"></i></p>
+                                <p class="shopping"><i class="fas fa-cart-plus"></i></p>
+                                <p><i class="fas fa-exchange-alt"></i></p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- item1 -->   
+                    <!-- item1 -->
+
+                    <div class="items">
+                        <div class="img">
+                                <img src="images/book/book4.png" alt="">
+                        </div>
+                        <div class="text">
+                            <h6 class="title"> <span><i class="fas fa-book-open"></i></span> كتاب ورقي</h6>
+                            <p class="star">
+                                <i class="fas fa-star best"></i>
+                                <i class="fas fa-star best"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </p>
+                            <p class="name-book" >التفكير السليم<span>(كتاب ورقي)</span></p>
+                        </div>
+                        <div class="footer-item">
+                            <h6>99.99 <small>رس</small></h6>
+                            <p><small>شامل الضريبة</small></p>
+                            <p>صيغ أخري : <b>كتاب مطبوع</b></p>
+                            <div class="icon">
+                                <p><i class="fas fa-star"></i></p>
+                                <p class="shopping"><i class="fas fa-cart-plus"></i></p>
+                                <p><i class="fas fa-exchange-alt"></i></p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- item1 -->  
+        </section>
+          <!-- section 5 -->
+          <section class="section">
+            <div class="main-title flex-between">
+                <h3>الاقتصاد</h3>
+                <p>عرض الكل</p>
+            </div>
+            <div class="slid-section container-book section-container" >
+                <!-- arrow -->
+                <a class="prev" id="slide-left" onclick="leftScrol(3)">&#10094;</a>
+                <a class="next"id="slide-right" onclick="rightScrol(3)">&#10095;</a> <!-- arrow -->
+
+                    <!-- item1 -->
+                    <div class="items">
+                    <div class="img">
+                            <img src="images/book/book10.png" alt="">
+                    </div>
+                    <div class="text">
+                        <h6 class="title"> <span><i class="fas fa-book-open"></i></span> كتاب إلكتروني</h6>
+                        <p class="star">
+                            <i class="fas fa-star best"></i>
+                            <i class="fas fa-star best "></i>
+                            <i class="fas fa-star best "></i>
+                            <i class="fas fa-star best "></i>
+                            <i class="fas fa-star"></i>
+                        </p>
+                        <p class="name-book">لأنك الله  <span>(كتاب الكتروني)</span></p>
+                    </div>
+                    <div class="footer-item">
+                        <h6>99.99 <small>رس</small></h6>
+                        <p><small>شامل الضريبة</small></p>
+                        <p>صيغ أخري : <b>كتاب مطبوع</b></p>
+                        <div class="icon">
+                            <p><i class="fas fa-star"></i></p>
+                            <p class="shopping"><i class="fas fa-cart-plus"></i></p>
+                            <p><i class="fas fa-exchange-alt"></i></p>
+                        </div>
+                    </div>
+                    </div>
+                    <!-- item1 -->
+                    
+                    <!-- item1 -->
+                    <div class="items">
+                    <div class="img">
+                            <img src="images/book/book3.jpg" alt="">
+                    </div>
+                    <div class="text">
+                        <h6 class="title"> <span><i class="fas fa-book-open"></i></span> كتاب إلكتروني</h6>
+                        <p class="star">
+                            <i class="fas fa-star best"></i>
+                            <i class="fas fa-star best "></i>
+                            <i class="fas fa-star best "></i>
+                            <i class="fas fa-star best "></i>
+                            <i class="fas fa-star"></i>
+                        </p>
+                        <p class="name-book">لأنك الله  <span>(كتاب الكتروني)</span></p>
+                    </div>
+                    <div class="footer-item">
+                        <h6>99.99 <small>رس</small></h6>
+                        <p><small>شامل الضريبة</small></p>
+                        <p>صيغ أخري : <b>كتاب مطبوع</b></p>
+                        <div class="icon">
+                            <p><i class="fas fa-star"></i></p>
+                            <p class="shopping"><i class="fas fa-cart-plus"></i></p>
+                            <p><i class="fas fa-exchange-alt"></i></p>
+                        </div>
+                    </div>
+                    </div>
+                    <!-- item1 -->
+                                <!-- item1 -->
+                    <div class="items">
+                    <div class="img">
+                            <img src="images/book/book4.png" alt="">
+                    </div>
+                    <div class="text">
+                        <h6 class="title"> <span><i class="fas fa-book-open"></i></span> كتاب إلكتروني</h6>
+                        <p class="star">
+                            <i class="fas fa-star best"></i>
+                            <i class="fas fa-star best "></i>
+                            <i class="fas fa-star best "></i>
+                            <i class="fas fa-star best "></i>
+                            <i class="fas fa-star"></i>
+                        </p>
+                        <p class="name-book">لأنك الله  <span>(كتاب الكتروني)</span></p>
+                    </div>
+                    <div class="footer-item">
+                        <h6>99.99 <small>رس</small></h6>
+                        <p><small>شامل الضريبة</small></p>
+                        <p>صيغ أخري : <b>كتاب مطبوع</b></p>
+                        <div class="icon">
+                            <p><i class="fas fa-star"></i></p>
+                            <p class="shopping"><i class="fas fa-cart-plus"></i></p>
+                            <p><i class="fas fa-exchange-alt"></i></p>
+                        </div>
+                    </div>
+                    </div>
+                    <!-- item1 -->
+                    
+                    <!-- item1 -->
+                    <div class="items">
+                    <div class="img">
+                            <img src="images/book/book1.jpg" alt="">
+                    </div>
+                    <div class="text">
+                        <h6 class="title"> <span><i class="fas fa-book-open"></i></span> كتاب إلكتروني</h6>
+                        <p class="star">
+                            <i class="fas fa-star best"></i>
+                            <i class="fas fa-star best "></i>
+                            <i class="fas fa-star best "></i>
+                            <i class="fas fa-star best "></i>
+                            <i class="fas fa-star"></i>
+                        </p>
+                        <p class="name-book">لأنك الله  <span>(كتاب الكتروني)</span></p>
+                    </div>
+                    <div class="footer-item">
+                        <h6>99.99 <small>رس</small></h6>
+                        <p><small>شامل الضريبة</small></p>
+                        <p>صيغ أخري : <b>كتاب مطبوع</b></p>
+                        <div class="icon">
+                            <p><i class="fas fa-star"></i></p>
+                            <p class="shopping"><i class="fas fa-cart-plus"></i></p>
+                            <p><i class="fas fa-exchange-alt"></i></p>
+                        </div>
+                    </div>
+                    </div>
+                    <!-- item1 -->
+                                
+                    <!-- item1 -->
+                    <div class="items">
+                    <div class="img">
+                            <img src="images/book/book1.jpg" alt="">
+                    </div>
+                    <div class="text">
+                        <h6 class="title"> <span><i class="fas fa-book-open"></i></span> كتاب إلكتروني</h6>
+                        <p class="star">
+                            <i class="fas fa-star best"></i>
+                            <i class="fas fa-star best "></i>
+                            <i class="fas fa-star best "></i>
+                            <i class="fas fa-star best "></i>
+                            <i class="fas fa-star"></i>
+                        </p>
+                        <p class="name-book">لأنك الله  <span>(كتاب الكتروني)</span></p>
+                    </div>
+                    <div class="footer-item">
+                        <h6>99.99 <small>رس</small></h6>
+                        <p><small>شامل الضريبة</small></p>
+                        <p>صيغ أخري : <b>كتاب مطبوع</b></p>
+                        <div class="icon">
+                            <p><i class="fas fa-star"></i></p>
+                            <p class="shopping"><i class="fas fa-cart-plus"></i></p>
+                            <p><i class="fas fa-exchange-alt"></i></p>
+                        </div>
+                    </div>
+                    </div>
+                    <!-- item1 -->
+                    <!-- item1 -->
+
+                    <div class="items">
+                    <div class="img">
+                            <img src="images/book/book2.jpg" alt="">
+                    </div>
+                    <div class="text">
+                        <h6 class="title"><span ><i class="fas fa-book-open"></i></span>  كتاب ورقي </h6>
+                        <!-- star -->
+                        <p class="star">
+
+                        </p>
+                        <p class="name-book"> إحياء علوم الدين <span>(كتاب ورقي)</span></p>
+                    </div>
+                    <div class="footer-item">
+                        <h6>99.99 <small>رس</small></h6>
+                        <p><small>شامل الضريبة</small></p>
+                        <p>صيغ أخري : <b>كتاب مطبوع</b></p>
+                        <div class="icon">
+                            <p><i class="fas fa-star"></i></p>
+                            <p class="shopping"><i class="fas fa-cart-plus"></i></p>
+                            <p><i class="fas fa-exchange-alt"></i></p>
+                        </div>
+                    </div>
+                    </div>
+                    <!-- item1 -->
+                    <!-- item1 -->
+
+                    <div class="items">
+                        <div class="img">
+                                <img src="images/book/book3.jpg" alt="">
+                        </div>
+                        <div class="text">
+                            <h6 class="title"><span><i class="fas fa-book-open"></i></span>  كتاب إلكتروني</h6>
+                            <p class="star">
+                                <i class="fas fa-star best"></i>
+                                <i class="fas fa-star best"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </p>
+                            <p class="name-book" >Smart Reading<span>(كتاب الكتروني)</span></p>
+                        </div>
+                        <div class="footer-item">
+                            <h6>99.99 <small>رس</small></h6>
+                            <p><small>شامل الضريبة</small></p>
+                            <p>صيغ أخري : <b>كتاب مطبوع</b></p>
+                            <div class="icon">
+                                <p><i class="fas fa-star"></i></p>
+                                <p class="shopping"><i class="fas fa-cart-plus"></i></p>
+                                <p><i class="fas fa-exchange-alt"></i></p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- item1 -->   
+                    <!-- item1 -->
+
+                    <div class="items">
+                        <div class="img">
+                                <img src="images/book/book4.png" alt="">
+                        </div>
+                        <div class="text">
+                            <h6 class="title"> <span><i class="fas fa-book-open"></i></span> كتاب ورقي</h6>
+                            <p class="star">
+                                <i class="fas fa-star best"></i>
+                                <i class="fas fa-star best"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </p>
+                            <p class="name-book" >التفكير السليم<span>(كتاب ورقي)</span></p>
+                        </div>
+                        <div class="footer-item">
+                            <h6>99.99 <small>رس</small></h6>
+                            <p><small>شامل الضريبة</small></p>
+                            <p>صيغ أخري : <b>كتاب مطبوع</b></p>
+                            <div class="icon">
+                                <p><i class="fas fa-star"></i></p>
+                                <p class="shopping"><i class="fas fa-cart-plus"></i></p>
+                                <p><i class="fas fa-exchange-alt"></i></p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- item1 -->  
+        </section>
+          <!-- section 6 -->
+          <section class="section">
+            <div class="main-title flex-between">
+                <h3>الطبخ</h3>
+                <p>عرض الكل</p>
+            </div>
+            <div class="slid-section container-book section-container">
+                <!-- arrow -->
+                <a class="prev" id="slide-left" onclick="leftScrol(3)">&#10094;</a>
+                <a class="next"id="slide-right" onclick="rightScrol(3)">&#10095;</a> <!-- arrow -->
+
+                    <!-- item1 -->
+                    <div class="items">
+                    <div class="img">
+                            <img src="images/book/book10.png" alt="">
+                    </div>
+                    <div class="text">
+                        <h6 class="title"> <span><i class="fas fa-book-open"></i></span> كتاب إلكتروني</h6>
+                        <p class="star">
+                            <i class="fas fa-star best"></i>
+                            <i class="fas fa-star best "></i>
+                            <i class="fas fa-star best "></i>
+                            <i class="fas fa-star best "></i>
+                            <i class="fas fa-star"></i>
+                        </p>
+                        <p class="name-book">لأنك الله  <span>(كتاب الكتروني)</span></p>
+                    </div>
+                    <div class="footer-item">
+                        <h6>99.99 <small>رس</small></h6>
+                        <p><small>شامل الضريبة</small></p>
+                        <p>صيغ أخري : <b>كتاب مطبوع</b></p>
+                        <div class="icon">
+                            <p><i class="fas fa-star"></i></p>
+                            <p class="shopping"><i class="fas fa-cart-plus"></i></p>
+                            <p><i class="fas fa-exchange-alt"></i></p>
+                        </div>
+                    </div>
+                    </div>
+                    <!-- item1 -->
+                    
+                    <!-- item1 -->
+                    <div class="items">
+                    <div class="img">
+                            <img src="images/book/book3.jpg" alt="">
+                    </div>
+                    <div class="text">
+                        <h6 class="title"> <span><i class="fas fa-book-open"></i></span> كتاب إلكتروني</h6>
+                        <p class="star">
+                            <i class="fas fa-star best"></i>
+                            <i class="fas fa-star best "></i>
+                            <i class="fas fa-star best "></i>
+                            <i class="fas fa-star best "></i>
+                            <i class="fas fa-star"></i>
+                        </p>
+                        <p class="name-book">لأنك الله  <span>(كتاب الكتروني)</span></p>
+                    </div>
+                    <div class="footer-item">
+                        <h6>99.99 <small>رس</small></h6>
+                        <p><small>شامل الضريبة</small></p>
+                        <p>صيغ أخري : <b>كتاب مطبوع</b></p>
+                        <div class="icon">
+                            <p><i class="fas fa-star"></i></p>
+                            <p class="shopping"><i class="fas fa-cart-plus"></i></p>
+                            <p><i class="fas fa-exchange-alt"></i></p>
+                        </div>
+                    </div>
+                    </div>
+                    <!-- item1 -->
+                                <!-- item1 -->
+                    <div class="items">
+                    <div class="img">
+                            <img src="images/book/book4.png" alt="">
+                    </div>
+                    <div class="text">
+                        <h6 class="title"> <span><i class="fas fa-book-open"></i></span> كتاب إلكتروني</h6>
+                        <p class="star">
+                            <i class="fas fa-star best"></i>
+                            <i class="fas fa-star best "></i>
+                            <i class="fas fa-star best "></i>
+                            <i class="fas fa-star best "></i>
+                            <i class="fas fa-star"></i>
+                        </p>
+                        <p class="name-book">لأنك الله  <span>(كتاب الكتروني)</span></p>
+                    </div>
+                    <div class="footer-item">
+                        <h6>99.99 <small>رس</small></h6>
+                        <p><small>شامل الضريبة</small></p>
+                        <p>صيغ أخري : <b>كتاب مطبوع</b></p>
+                        <div class="icon">
+                            <p><i class="fas fa-star"></i></p>
+                            <p class="shopping"><i class="fas fa-cart-plus"></i></p>
+                            <p><i class="fas fa-exchange-alt"></i></p>
+                        </div>
+                    </div>
+                    </div>
+                    <!-- item1 -->
+                    
+                    <!-- item1 -->
+                    <div class="items">
+                    <div class="img">
+                            <img src="images/book/book1.jpg" alt="">
+                    </div>
+                    <div class="text">
+                        <h6 class="title"> <span><i class="fas fa-book-open"></i></span> كتاب إلكتروني</h6>
+                        <p class="star">
+                            <i class="fas fa-star best"></i>
+                            <i class="fas fa-star best "></i>
+                            <i class="fas fa-star best "></i>
+                            <i class="fas fa-star best "></i>
+                            <i class="fas fa-star"></i>
+                        </p>
+                        <p class="name-book">لأنك الله  <span>(كتاب الكتروني)</span></p>
+                    </div>
+                    <div class="footer-item">
+                        <h6>99.99 <small>رس</small></h6>
+                        <p><small>شامل الضريبة</small></p>
+                        <p>صيغ أخري : <b>كتاب مطبوع</b></p>
+                        <div class="icon">
+                            <p><i class="fas fa-star"></i></p>
+                            <p class="shopping"><i class="fas fa-cart-plus"></i></p>
+                            <p><i class="fas fa-exchange-alt"></i></p>
+                        </div>
+                    </div>
+                    </div>
+                    <!-- item1 -->
+                                
+                    <!-- item1 -->
+                    <div class="items">
+                    <div class="img">
+                            <img src="images/book/book1.jpg" alt="">
+                    </div>
+                    <div class="text">
+                        <h6 class="title"> <span><i class="fas fa-book-open"></i></span> كتاب إلكتروني</h6>
+                        <p class="star">
+                            <i class="fas fa-star best"></i>
+                            <i class="fas fa-star best "></i>
+                            <i class="fas fa-star best "></i>
+                            <i class="fas fa-star best "></i>
+                            <i class="fas fa-star"></i>
+                        </p>
+                        <p class="name-book">لأنك الله  <span>(كتاب الكتروني)</span></p>
+                    </div>
+                    <div class="footer-item">
+                        <h6>99.99 <small>رس</small></h6>
+                        <p><small>شامل الضريبة</small></p>
+                        <p>صيغ أخري : <b>كتاب مطبوع</b></p>
+                        <div class="icon">
+                            <p><i class="fas fa-star"></i></p>
+                            <p class="shopping"><i class="fas fa-cart-plus"></i></p>
+                            <p><i class="fas fa-exchange-alt"></i></p>
+                        </div>
+                    </div>
+                    </div>
+                    <!-- item1 -->
+                    <!-- item1 -->
+
+                    <div class="items">
+                    <div class="img">
+                            <img src="images/book/book2.jpg" alt="">
+                    </div>
+                    <div class="text">
+                        <h6 class="title"><span ><i class="fas fa-book-open"></i></span>  كتاب ورقي </h6>
+                        <!-- star -->
+                        <p class="star">
+
+                        </p>
+                        <p class="name-book"> إحياء علوم الدين <span>(كتاب ورقي)</span></p>
+                    </div>
+                    <div class="footer-item">
+                        <h6>99.99 <small>رس</small></h6>
+                        <p><small>شامل الضريبة</small></p>
+                        <p>صيغ أخري : <b>كتاب مطبوع</b></p>
+                        <div class="icon">
+                            <p><i class="fas fa-star"></i></p>
+                            <p class="shopping"><i class="fas fa-cart-plus"></i></p>
+                            <p><i class="fas fa-exchange-alt"></i></p>
+                        </div>
+                    </div>
+                    </div>
+                    <!-- item1 -->
+                    <!-- item1 -->
+
+                    <div class="items">
+                        <div class="img">
+                                <img src="images/book/book3.jpg" alt="">
+                        </div>
+                        <div class="text">
+                            <h6 class="title"><span><i class="fas fa-book-open"></i></span>  كتاب إلكتروني</h6>
+                            <p class="star">
+                                <i class="fas fa-star best"></i>
+                                <i class="fas fa-star best"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </p>
+                            <p class="name-book" >Smart Reading<span>(كتاب الكتروني)</span></p>
+                        </div>
+                        <div class="footer-item">
+                            <h6>99.99 <small>رس</small></h6>
+                            <p><small>شامل الضريبة</small></p>
+                            <p>صيغ أخري : <b>كتاب مطبوع</b></p>
+                            <div class="icon">
+                                <p><i class="fas fa-star"></i></p>
+                                <p class="shopping"><i class="fas fa-cart-plus"></i></p>
+                                <p><i class="fas fa-exchange-alt"></i></p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- item1 -->   
+                    <!-- item1 -->
+
+                    <div class="items">
+                        <div class="img">
+                                <img src="images/book/book4.png" alt="">
+                        </div>
+                        <div class="text">
+                            <h6 class="title"> <span><i class="fas fa-book-open"></i></span> كتاب ورقي</h6>
+                            <p class="star">
+                                <i class="fas fa-star best"></i>
+                                <i class="fas fa-star best"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </p>
+                            <p class="name-book" >التفكير السليم<span>(كتاب ورقي)</span></p>
+                        </div>
+                        <div class="footer-item">
+                            <h6>99.99 <small>رس</small></h6>
+                            <p><small>شامل الضريبة</small></p>
+                            <p>صيغ أخري : <b>كتاب مطبوع</b></p>
+                            <div class="icon">
+                                <p><i class="fas fa-star"></i></p>
+                                <p class="shopping"><i class="fas fa-cart-plus"></i></p>
+                                <p><i class="fas fa-exchange-alt"></i></p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- item1 -->  
+        </section>
+         <!-- section 6 -->
+         <section class="section">
+            <div class="main-title flex-between">
+                <h3>افضل الروايات الرومنسية</h3>
+                <p>عرض الكل</p>
+            </div>
+            <div class="slid-section container-book section-container">
+                <!-- arrow -->
+                <a class="prev" id="slide-left" onclick="leftScrol(3)">&#10094;</a>
+                <a class="next"id="slide-right" onclick="rightScrol(3)">&#10095;</a> <!-- arrow -->
+
+                    <!-- item1 -->
+                    <div class="items">
+                    <div class="img">
+                            <img src="images/book/book10.png" alt="">
+                    </div>
+                    <div class="text">
+                        <h6 class="title"> <span><i class="fas fa-book-open"></i></span> كتاب إلكتروني</h6>
+                        <p class="star">
+                            <i class="fas fa-star best"></i>
+                            <i class="fas fa-star best "></i>
+                            <i class="fas fa-star best "></i>
+                            <i class="fas fa-star best "></i>
+                            <i class="fas fa-star"></i>
+                        </p>
+                        <p class="name-book">لأنك الله  <span>(كتاب الكتروني)</span></p>
+                    </div>
+                    <div class="footer-item">
+                        <h6>99.99 <small>رس</small></h6>
+                        <p><small>شامل الضريبة</small></p>
+                        <p>صيغ أخري : <b>كتاب مطبوع</b></p>
+                        <div class="icon">
+                            <p><i class="fas fa-star"></i></p>
+                            <p class="shopping"><i class="fas fa-cart-plus"></i></p>
+                            <p><i class="fas fa-exchange-alt"></i></p>
+                        </div>
+                    </div>
+                    </div>
+                    <!-- item1 -->
+                    
+                    <!-- item1 -->
+                    <div class="items">
+                    <div class="img">
+                            <img src="images/book/book3.jpg" alt="">
+                    </div>
+                    <div class="text">
+                        <h6 class="title"> <span><i class="fas fa-book-open"></i></span> كتاب إلكتروني</h6>
+                        <p class="star">
+                            <i class="fas fa-star best"></i>
+                            <i class="fas fa-star best "></i>
+                            <i class="fas fa-star best "></i>
+                            <i class="fas fa-star best "></i>
+                            <i class="fas fa-star"></i>
+                        </p>
+                        <p class="name-book">لأنك الله  <span>(كتاب الكتروني)</span></p>
+                    </div>
+                    <div class="footer-item">
+                        <h6>99.99 <small>رس</small></h6>
+                        <p><small>شامل الضريبة</small></p>
+                        <p>صيغ أخري : <b>كتاب مطبوع</b></p>
+                        <div class="icon">
+                            <p><i class="fas fa-star"></i></p>
+                            <p class="shopping"><i class="fas fa-cart-plus"></i></p>
+                            <p><i class="fas fa-exchange-alt"></i></p>
+                        </div>
+                    </div>
+                    </div>
+                    <!-- item1 -->
+                                <!-- item1 -->
+                    <div class="items">
+                    <div class="img">
+                            <img src="images/book/book4.png" alt="">
+                    </div>
+                    <div class="text">
+                        <h6 class="title"> <span><i class="fas fa-book-open"></i></span> كتاب إلكتروني</h6>
+                        <p class="star">
+                            <i class="fas fa-star best"></i>
+                            <i class="fas fa-star best "></i>
+                            <i class="fas fa-star best "></i>
+                            <i class="fas fa-star best "></i>
+                            <i class="fas fa-star"></i>
+                        </p>
+                        <p class="name-book">لأنك الله  <span>(كتاب الكتروني)</span></p>
+                    </div>
+                    <div class="footer-item">
+                        <h6>99.99 <small>رس</small></h6>
+                        <p><small>شامل الضريبة</small></p>
+                        <p>صيغ أخري : <b>كتاب مطبوع</b></p>
+                        <div class="icon">
+                            <p><i class="fas fa-star"></i></p>
+                            <p class="shopping"><i class="fas fa-cart-plus"></i></p>
+                            <p><i class="fas fa-exchange-alt"></i></p>
+                        </div>
+                    </div>
+                    </div>
+                    <!-- item1 -->
+                    
+                    <!-- item1 -->
+                    <div class="items">
+                    <div class="img">
+                            <img src="images/book/book1.jpg" alt="">
+                    </div>
+                    <div class="text">
+                        <h6 class="title"> <span><i class="fas fa-book-open"></i></span> كتاب إلكتروني</h6>
+                        <p class="star">
+                            <i class="fas fa-star best"></i>
+                            <i class="fas fa-star best "></i>
+                            <i class="fas fa-star best "></i>
+                            <i class="fas fa-star best "></i>
+                            <i class="fas fa-star"></i>
+                        </p>
+                        <p class="name-book">لأنك الله  <span>(كتاب الكتروني)</span></p>
+                    </div>
+                    <div class="footer-item">
+                        <h6>99.99 <small>رس</small></h6>
+                        <p><small>شامل الضريبة</small></p>
+                        <p>صيغ أخري : <b>كتاب مطبوع</b></p>
+                        <div class="icon">
+                            <p><i class="fas fa-star"></i></p>
+                            <p class="shopping"><i class="fas fa-cart-plus"></i></p>
+                            <p><i class="fas fa-exchange-alt"></i></p>
+                        </div>
+                    </div>
+                    </div>
+                    <!-- item1 -->
+                                
+                    <!-- item1 -->
+                    <div class="items">
+                    <div class="img">
+                            <img src="images/book/book1.jpg" alt="">
+                    </div>
+                    <div class="text">
+                        <h6 class="title"> <span><i class="fas fa-book-open"></i></span> كتاب إلكتروني</h6>
+                        <p class="star">
+                            <i class="fas fa-star best"></i>
+                            <i class="fas fa-star best "></i>
+                            <i class="fas fa-star best "></i>
+                            <i class="fas fa-star best "></i>
+                            <i class="fas fa-star"></i>
+                        </p>
+                        <p class="name-book">لأنك الله  <span>(كتاب الكتروني)</span></p>
+                    </div>
+                    <div class="footer-item">
+                        <h6>99.99 <small>رس</small></h6>
+                        <p><small>شامل الضريبة</small></p>
+                        <p>صيغ أخري : <b>كتاب مطبوع</b></p>
+                        <div class="icon">
+                            <p><i class="fas fa-star"></i></p>
+                            <p class="shopping"><i class="fas fa-cart-plus"></i></p>
+                            <p><i class="fas fa-exchange-alt"></i></p>
+                        </div>
+                    </div>
+                    </div>
+                    <!-- item1 -->
+                    <!-- item1 -->
+
+                    <div class="items">
+                    <div class="img">
+                            <img src="images/book/book2.jpg" alt="">
+                    </div>
+                    <div class="text">
+                        <h6 class="title"><span ><i class="fas fa-book-open"></i></span>  كتاب ورقي </h6>
+                        <!-- star -->
+                        <p class="star">
+
+                        </p>
+                        <p class="name-book"> إحياء علوم الدين <span>(كتاب ورقي)</span></p>
+                    </div>
+                    <div class="footer-item">
+                        <h6>99.99 <small>رس</small></h6>
+                        <p><small>شامل الضريبة</small></p>
+                        <p>صيغ أخري : <b>كتاب مطبوع</b></p>
+                        <div class="icon">
+                            <p><i class="fas fa-star"></i></p>
+                            <p class="shopping"><i class="fas fa-cart-plus"></i></p>
+                            <p><i class="fas fa-exchange-alt"></i></p>
+                        </div>
+                    </div>
+                    </div>
+                    <!-- item1 -->
+                    <!-- item1 -->
+
+                    <div class="items">
+                        <div class="img">
+                                <img src="images/book/book3.jpg" alt="">
+                        </div>
+                        <div class="text">
+                            <h6 class="title"><span><i class="fas fa-book-open"></i></span>  كتاب إلكتروني</h6>
+                            <p class="star">
+                                <i class="fas fa-star best"></i>
+                                <i class="fas fa-star best"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </p>
+                            <p class="name-book" >Smart Reading<span>(كتاب الكتروني)</span></p>
+                        </div>
+                        <div class="footer-item">
+                            <h6>99.99 <small>رس</small></h6>
+                            <p><small>شامل الضريبة</small></p>
+                            <p>صيغ أخري : <b>كتاب مطبوع</b></p>
+                            <div class="icon">
+                                <p><i class="fas fa-star"></i></p>
+                                <p class="shopping"><i class="fas fa-cart-plus"></i></p>
+                                <p><i class="fas fa-exchange-alt"></i></p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- item1 -->   
+                    <!-- item1 -->
+
+                    <div class="items">
+                        <div class="img">
+                                <img src="images/book/book4.png" alt="">
+                        </div>
+                        <div class="text">
+                            <h6 class="title"> <span><i class="fas fa-book-open"></i></span> كتاب ورقي</h6>
+                            <p class="star">
+                                <i class="fas fa-star best"></i>
+                                <i class="fas fa-star best"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </p>
+                            <p class="name-book" >التفكير السليم<span>(كتاب ورقي)</span></p>
+                        </div>
+                        <div class="footer-item">
+                            <h6>99.99 <small>رس</small></h6>
+                            <p><small>شامل الضريبة</small></p>
+                            <p>صيغ أخري : <b>كتاب مطبوع</b></p>
+                            <div class="icon">
+                                <p><i class="fas fa-star"></i></p>
+                                <p class="shopping"><i class="fas fa-cart-plus"></i></p>
+                                <p><i class="fas fa-exchange-alt"></i></p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- item1 -->  
+        </section>
         <!-- product section -->
 
     </main>
@@ -664,7 +2102,7 @@
                 </div>
                 <form action="">
                 <input   type="email" name="email" placeholder="البريد الالكتروني أو رقم الجوال" required="" maxlength="25" minlength="4">
-                <input   type="password" name="password" placeholder="كلمة السر <p>ig</p>" required="" maxlength="25" minlength="4">
+                <input   type="password" name="password" placeholder="كلمة السر" required="" maxlength="25" minlength="4">
                 <button type="submit" name="register" >تسجيل الدخول</button>
                 </form>
                 <div>

@@ -1,15 +1,23 @@
 // product slider2
 
-let buttonRight = document.getElementById('slide-right');
-let buttonLeft = document.getElementById('slide-left');
+// var sliderId=["container-book1","container-book2","container-book3"];
 
-let slider = document.getElementById('container-book');
+let slider = document.getElementsByClassName("slid-section");
+let viewallSection = document.getElementsByClassName('section-container');
 
 
-buttonLeft.addEventListener('click', function(){
-    slider.scrollLeft -= 265;
-})
+console.log(viewallSection);
 
-buttonRight.addEventListener('click', function(){
-    slider.scrollLeft += 265;
-})
+function leftScrol(no){
+
+    slider[no].scrollLeft -= 265;
+}
+function rightScrol(no){
+    slider[no].scrollLeft += 265;
+}
+function viewAll(no){
+
+    slider[no].style.display = "none";
+
+// slider[no].classList.add('flex-wrap');
+}

@@ -22,7 +22,7 @@
     
 
 </head>
-<body dir="rtl">
+<body dir="rtl"id="body" class="bodyAR">
 
     <!-- checkout  -->
 
@@ -169,47 +169,67 @@
                             <h3>المعلومات الشخصية</h3>
                         </div>
                         <div class="form">
-                            <form action="" dir="rtl">
-                            <div >
-                       
-                                    <input id="phon" type="text" name="f-name" placeholder="التلفون" required="" >
-                                    <select name="" id="">
-                                        <option value="">رمز البلد</option>
-                                        <option value="">+976</option>
-                                        <option value="">+967</option>
-                                        <option value="">+965</option>
-                                    </select>  
+                                    <form action="" dir="rtl">
+                                    <div class="flex-between" >
+                            
+                                            <input id="phon" type="text" name="f-name" placeholder="التلفون" required="" >
+                                            <select name="" id="">
+                                                <option value="">رمز البلد</option>
+                                                <option value="">+976</option>
+                                                <option value="">+967</option>
+                                                <option value="">+965</option>
+                                            </select>  
+                                </div>
+                                <input  type="text" name="f-name" placeholder="الاسم الكامل" required="" >
+                                <input   type="email" name="email" placeholder="الايميل" required="" >
+                                <input   type="text" name="address" placeholder="العنوان" required="" >
+                                <input type="text" name="city" placeholder="المدينة">
+                                
+                            </form>
                          </div>
-                        <input  type="text" name="f-name" placeholder="الاسم الكامل" required="" >
-                        <input   type="email" name="email" placeholder="الايميل" required="" >
-                        <input   type="text" name="address" placeholder="العنوان" required="" >
-                         <input type="text" name="city" placeholder="المدينة">
-                    </form>
-                    </div>
                     </div>
     
                 <!-- pyment step -->
     
                     <div class="pymentinfo step">
-                        
+                        <div class="titelOperation flex-center">
+                            <h3> بيانات بطاقة الدفع</h3>
+                        </div>
+                        <div class="form">
+                                    <form action="" dir="rtl">
+                                <input  type="text" name="name-card" placeholder="الاسم على البطاقة" required="" >
+                                <input   type="email" name="card-number" placeholder="0000-0000-0000-0000" required="" >
+                                <input   type="text" name="Ex-date" placeholder="الشهر" required="" >
+                                <input type="text" name="year" placeholder="السنة">
+                                <input type="text " name="cvv" placeholder="CVV">
+                                
+                            </form>
+                            </div>
                     </div>
                 <!-- confirm step -->
                     <div class="confirm step">
-    
+                        <div class="titelOperation flex-center">
+                            <h3> تأكيد عملية الشراء</h3>
+                        </div>
+                        <p>هل أنت متأكد من بياناتك وتريد الدفع؟؟</p>
                     </div>
                 <!-- don step -->
-                    <div class="done step">
-    
+                    <div class="done step flex-center">
+                        <div class="titelOperation flex-center">
+                            <h3> تمت العملية بنجاح</h3>
+                        </div>
+                            <h4 class="success"><i class="far fa-check-circle"></i></h4>
                     </div>
                 </div>
             <!-- details step -->
            
-                <div class="flex-center">
-                    <button id="prve-btn">السابق</button>
-                    <button id="next-btn">التالي</button>
-                   
-                </div>
+                
+
                <div class="pyment-footer">
+                   <div class="flex-center">
+                                    <button id="prve-btn" type="reset">السابق</button>
+                                    <button type="submit" id="next-btn" >التالي</button>
+                                </div>
                     <div class="operation flex-center">
                         <div class="numberOperation flex-center">
                             <p id ="operationNumber">0</p>/<p>4</p>
@@ -247,57 +267,61 @@
         const numberOperation=document.getElementById('operationNumber');
         const steps = document.querySelectorAll('.circl');
         const modalstep=document.getElementsByClassName('step');
-
-let index=1;
-nextBTN.addEventListener('click',()=>{
-
-    index++;
-
-    if(index >steps.length){
-        index = steps.length;
-    }
-    else{
-
-        changesteps()
-    }
-
-
-});
-
-privBTN.addEventListener('click',()=>{
-
-    index--;
-
-    if(index<0){
-        index = 0;
         
-    }
-    else{
-        changesteps();
-       
-       
-    }
- 
+        
+        let index=0;
+        for(let m=0;m<modalstep.length;m++){
+        modalstep[m].style.display="none";
+        }
+        modalstep[index].style.display="block";
 
-});
+        nextBTN.addEventListener('click',()=>{  
+            index++;
+            if(index >steps.length){
+                index = steps.length;
+            }
+            else{
+                
+                changesteps();
+            }
+        });
 
+        privBTN.addEventListener('click',()=>{
 
+            for(let m=0;m<index;m++){
+                modalstep[m].style.display="none";
+                }
 
+            index--;
+            if(index<0){
+                index = 1;
+                
+            }
+            else{
+            
+                changesteps();
+            }
+        });
 
 function changesteps(){
-steps.forEach((item,i)=>{
+    for(let m=0;m<index;m++){
 
-if(i<index){
-    item.classList.add('active');
-    numberOperation.innerHTML=i+1;
-    modalstep[i].style.display="block";
-}
-else{
-    item.classList.remove('active'); 
-    modalstep[i+1].style.display="none";
-}
+                modalstep[m].style.display="none";
+             }
 
-})
+        modalstep[index-1].style.display="block";
+
+            steps.forEach((item,i)=>{
+
+            if(i<index){
+                numberOperation.innerHTML=i+1;
+                item.classList.add('active');
+            }
+            else{
+                item.classList.remove('active');  
+            }
+
+            })
 }
 
     </script>
